@@ -12,9 +12,9 @@ Open browser to front page
     Set Selenium Timeout    ${SELENIUM TIMEOUT TIME}
     Open browser    ${URL FOR BROWSER}    ${BROWSER NAME}
 
-Check that Google opens correctly
+Check that Google opens
     Select frame    ${IFRAME}
-    Wait until Element Is Visible   ${BEFORE YOU CONTINUE HEADER}
+    Wait until Element Is Visible   ${BEFORE YOU CONTINUE}
 
 Close browser when done
     Close Browser
