@@ -2,6 +2,10 @@
 /shelf/
 /workspace.xml
 
-/results/
-/.idea/
+results
+.idea
 .png
+log.html
+output.html
+report.html
+__pycache__
