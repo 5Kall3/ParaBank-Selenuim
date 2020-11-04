@@ -14,8 +14,12 @@ NEW_ACCOUNT_LINK = "//ul/li/a[text()='Open New Account']"
 NEW_ACCOUNT_TITLE = "//h1[text()='Open New Account']"
 #ACCOUNT_QUERRY_TEXT = "//form/p/b[text()='What type of Account would you like to open?']"
 ACCOUNT_TYPE_SELECTOR = "//select[@id='type']"
+ACCOUNT_SAVINGS_BUTTON = "//select/option[@value=1]"
 NEW_ACCOUNT_BUTTON = "//input[@type='submit']"
 ACCOUNT_OPENED_TITLE = "//h1[text()='Account Opened!']"
+NEW_ACCOUNT_ID = "id = newAccountId"
+
+ACCOUNTS_OVERVIEW_LINK = "//ul/li/a[text()='Accounts Overview']"
 
 LOAN_LINK = "//ul/li/a[text()='Request Loan']"
 REQUEST_LOAN_TITLE = "//h1[text()]"

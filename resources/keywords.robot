@@ -56,10 +56,15 @@ Login into ParaBank
 Open new account
     Click Link    ${NEW ACCOUNT LINK}
     Wait Until Element Is Visible    ${NEW ACCOUNT TITLE}
-    Click Element At Coordinates     ${ACCOUNT TYPE SELECTOR}    20    0
-    Click Element At Coordinates     ${ACCOUNT TYPE SELECTOR}    0    -30
+    Click Element     ${ACCOUNT TYPE SELECTOR}
+    Click Element     ${ACCOUNT SAVINGS BUTTON}
     Click Button    ${NEW ACCOUNT BUTTON}
     Wait Until Element Is Visible    ${ACCOUNT OPENED TITLE}
+    ${ACCOUNT NUMBER} =    Get Text    ${NEW ACCOUNT ID}
+    Click Link    ${ACCOUNTS OVERVIEW LINK}
+    Wait Until Page Contains    ${ACCOUNT NUMBER}
+    #TODO
+    #Validate that the account is a savins account
 
 Request loan
     Click Link    ${LOAN LINK}

@@ -18,5 +18,5 @@ Login with right credentials
 Open new bank account
     Open new account
 
-Apply for a Loan
-    Request loan
+#Apply for a Loan
+    #Request loan
