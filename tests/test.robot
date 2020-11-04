@@ -1,8 +1,22 @@
 *** Settings ***
 Resource    ../resources/keywords.robot
-Suite Teardown    Close browser when done
+#Suite Teardown    Close browser when done
 
 *** Test Cases ***
-Test case 1 Open browser and Check that Google opens correctly
+Open ParaBank
     Open browser to front page
-    Check that Google opens
+    Open index page
+
+Login with wrong credentials
+    Wrong password
+    Wrong username
+    Wrong both
+
+Login with right credentials
+    Login into ParaBank
+
+Open new bank account
+    Open new account
+
+Apply for a Loan
+    Request loan
