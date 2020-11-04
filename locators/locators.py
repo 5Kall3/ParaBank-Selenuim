@@ -17,9 +17,11 @@ ACCOUNT_TYPE_SELECTOR = "//select[@id='type']"
 ACCOUNT_SAVINGS_BUTTON = "//select/option[@value=1]"
 NEW_ACCOUNT_BUTTON = "//input[@type='submit']"
 ACCOUNT_OPENED_TITLE = "//h1[text()='Account Opened!']"
-NEW_ACCOUNT_ID = "id = newAccountId"
 
+NEW_ACCOUNT_ID = "id = newAccountId"
 ACCOUNTS_OVERVIEW_LINK = "//ul/li/a[text()='Accounts Overview']"
+ACCOUNT_DETAILS_TITLE = "//h1[text()='Account Details']"
+ACCOUNT_TYPE = "//td[text()='SAVINGS']"
 
 LOAN_LINK = "//ul/li/a[text()='Request Loan']"
 REQUEST_LOAN_TITLE = "//h1[text()]"
@@ -28,7 +30,14 @@ DOWN_PAYMENT_INPUT = "//*[@id='downPayment']"
 APPLY_LOAN_BUTTON = "//input[@type='submit']"
 LOAN_ACCEPTED_TITLE = "//h1[text()]"
 
-
+TRANSFER_FUNDS_LINK = "//ul/li/a[text()='Transfer Funds']"
+TRANSFER_FUNDS_TITLE = "//h1[text()='Transfer Funds']"
+TRANSFER_AMOUNT = "//input[@id='amount']"
+TRANSFER_FROM_SELECTOR = "//select[@id='fromAccountId']"
+#TRANSFER_FROM_ID = ""
+TRANSFER_TO_SELECTOR = "//select[@id='toAccountId']"
+TRANSFER_BUTTON = "//input[@type='submit']"
+FUNDS_TRANSFERED_TITLE = "//h1[text()='Transfer Complete!']"
 
 
 ERROR_MESSAGE_TEXT = "class=error"

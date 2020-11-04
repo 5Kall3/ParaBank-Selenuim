@@ -58,13 +58,18 @@ Open new account
     Wait Until Element Is Visible    ${NEW ACCOUNT TITLE}
     Click Element     ${ACCOUNT TYPE SELECTOR}
     Click Element     ${ACCOUNT SAVINGS BUTTON}
+    Sleep    0.5s
     Click Button    ${NEW ACCOUNT BUTTON}
     Wait Until Element Is Visible    ${ACCOUNT OPENED TITLE}
+
+Validate New Account
     ${ACCOUNT NUMBER} =    Get Text    ${NEW ACCOUNT ID}
+    Set Global Variable    ${ACCOUNT NUMBER}
     Click Link    ${ACCOUNTS OVERVIEW LINK}
     Wait Until Page Contains    ${ACCOUNT NUMBER}
-    #TODO
-    #Validate that the account is a savins account
+    Click Link    ${ACCOUNT NUMBER}
+    Wait Until Element Is Visible    ${ACCOUNT DETAILS TITLE}
+    Wait Until Element Is Visible    ${ACCOUNT TYPE}
 
 Request loan
     Click Link    ${LOAN LINK}
@@ -73,3 +78,16 @@ Request loan
     Input Text    ${DOWN PAYMENT INPUT}    100
     Click Button    ${APPLY LOAN BUTTON}
     Wait Until Element Is Visible    ${LOAN ACCEPTED TITLE}
+
+Transfer funds
+    Click Link    ${TRANSFER FUNDS LINK}
+    Sleep    0.5s
+    Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
+    Input Text    ${TRANSFER AMOUNT}    50
+    #Click Element    ${TRANSFER FROM SELECTOR}
+    #Click Element    ${TRANSFER FROM ID}
+    Click Element    ${TRANSFER TO SELECTOR}
+    Sleep    0.5s
+    Click Element    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
+    Click Button    ${TRANSFER BUTTON}
+    Wait Until Element Is Visible    ${FUNDS TRANSFERED TITLE}
