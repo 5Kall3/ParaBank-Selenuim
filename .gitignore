@@ -6,6 +6,6 @@ results
 .idea
 .png
 log.html
-output.html
+output.xml
 report.html
 __pycache__

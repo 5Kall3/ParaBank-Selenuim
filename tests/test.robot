@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ../resources/keywords.robot
-#Suite Teardown    Close browser when done
+Suite Teardown    Close browser when done
 
 *** Test Cases ***
 Open ParaBank
@@ -17,6 +17,10 @@ Login with right credentials
 
 Open new bank account
     Open new account
+    Validate New Account
 
-#Apply for a Loan
-    #Request loan
+Apply for a Loan
+    Request loan
+
+Transfer funds to different account
+    Transfer funds
