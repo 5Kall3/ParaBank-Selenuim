@@ -7,8 +7,6 @@ Variables    ../locators/locators.py
 ${SELENIUM_TIMEOUT_TIME}    30 seconds
 ${URL_FOR_BROWSER}    https://parabank.parasoft.com/parabank/index.htm
 ${BROWSER_NAME}    chrome
-#${USERNAME}    default
-#${PASSWORD}    default
 
 *** Keywords ***
 Open browser to front page
