@@ -20,7 +20,10 @@ Open new bank account
     Validate New Account
 
 Apply for a Loan
-    Request loan
+    Request loan succsessful
+    Request loan fail
 
 Transfer funds to different account
     Transfer funds
+    Transfer negative funds
+    Transfer too many funds

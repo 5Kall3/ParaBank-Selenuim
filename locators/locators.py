@@ -10,6 +10,7 @@ LOGIN_BUTTON = "//input[@value='Log In']"
 
 ACCOUNTS_TITLE = "//h1[text()='Accounts Overview']"
 
+#Locators for New Account
 NEW_ACCOUNT_LINK = "//ul/li/a[text()='Open New Account']"
 NEW_ACCOUNT_TITLE = "//h1[text()='Open New Account']"
 #ACCOUNT_QUERRY_TEXT = "//form/p/b[text()='What type of Account would you like to open?']"
@@ -18,18 +19,25 @@ ACCOUNT_SAVINGS_BUTTON = "//select/option[@value=1]"
 NEW_ACCOUNT_BUTTON = "//input[@type='submit']"
 ACCOUNT_OPENED_TITLE = "//h1[text()='Account Opened!']"
 
+#Validate New Account
 NEW_ACCOUNT_ID = "id = newAccountId"
 ACCOUNTS_OVERVIEW_LINK = "//ul/li/a[text()='Accounts Overview']"
 ACCOUNT_DETAILS_TITLE = "//h1[text()='Account Details']"
-ACCOUNT_TYPE = "//td[text()='SAVINGS']"
+ACCOUNT_TYPE_SAVINGS = "//td[text()='SAVINGS']"
 
+#Requesting Loan
 LOAN_LINK = "//ul/li/a[text()='Request Loan']"
 REQUEST_LOAN_TITLE = "//h1[text()]"
 LOAN_AMOUNT_INPUT = "//*[@id='amount']"
 DOWN_PAYMENT_INPUT = "//*[@id='downPayment']"
 APPLY_LOAN_BUTTON = "//input[@type='submit']"
 LOAN_ACCEPTED_TITLE = "//h1[text()]"
+#Request loan succsessfully
+LOAN_APPROVED_TEXT = "//td[text()='Approved']"
+#Request loan fail
+LOAN_FAIL_TEXT = "//td[text()='Denied']"
 
+#Transferring funds
 TRANSFER_FUNDS_LINK = "//ul/li/a[text()='Transfer Funds']"
 TRANSFER_FUNDS_TITLE = "//h1[text()='Transfer Funds']"
 TRANSFER_AMOUNT = "//input[@id='amount']"
