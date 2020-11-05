@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.6.4 on win32)" generated="20201105 11:49:45.805" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.6.4 on win32)" generated="20201105 13:53:52.421" rpa="false">
 <suite id="s1" name="Test" source="C:\Users\omistaja\PycharmProjects\robotframework\tests\test.robot">
 <test id="s1-t1" name="Open ParaBank">
 <kw name="Open browser to front page" library="keywords">
@@ -8,7 +8,7 @@
 <arguments>
 <arg>${SELENIUM TIMEOUT TIME}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:46.089" endtime="20201105 11:49:46.089"></status>
+<status status="PASS" starttime="20201105 13:53:52.724" endtime="20201105 13:53:52.725"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -16,10 +16,10 @@
 <arg>${URL FOR BROWSER}</arg>
 <arg>${BROWSER NAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:46.089" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/parabank/index.htm'.</msg>
-<status status="PASS" starttime="20201105 11:49:46.089" endtime="20201105 11:49:54.332"></status>
+<msg timestamp="20201105 13:53:52.725" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/parabank/index.htm'.</msg>
+<status status="PASS" starttime="20201105 13:53:52.725" endtime="20201105 13:53:59.766"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:46.088" endtime="20201105 11:49:54.332"></status>
+<status status="PASS" starttime="20201105 13:53:52.724" endtime="20201105 13:53:59.766"></status>
 </kw>
 <kw name="Open index page" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -27,11 +27,11 @@
 <arguments>
 <arg>${PARABANK TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:54.333" endtime="20201105 11:49:54.360"></status>
+<status status="PASS" starttime="20201105 13:53:59.767" endtime="20201105 13:53:59.794"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:54.333" endtime="20201105 11:49:54.360"></status>
+<status status="PASS" starttime="20201105 13:53:59.767" endtime="20201105 13:53:59.794"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:46.087" endtime="20201105 11:49:54.360" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:53:52.723" endtime="20201105 13:53:59.795" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Create a new banking account">
 <kw name="Create a new banking customer" library="keywords">
@@ -40,101 +40,101 @@
 <arguments>
 <arg>Register</arg>
 </arguments>
-<msg timestamp="20201105 11:49:54.363" level="INFO">Clicking link 'Register'.</msg>
-<status status="PASS" starttime="20201105 11:49:54.363" endtime="20201105 11:49:54.839"></status>
+<msg timestamp="20201105 13:53:59.798" level="INFO">Clicking link 'Register'.</msg>
+<status status="PASS" starttime="20201105 13:53:59.798" endtime="20201105 13:54:00.948"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${SIGNING UP TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:54.839" endtime="20201105 11:49:54.865"></status>
+<status status="PASS" starttime="20201105 13:54:00.948" endtime="20201105 13:54:00.978"></status>
 </kw>
 <kw name="Generate Firstname" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE FIRSTNAME}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.865" level="INFO">${GENERATE FIRSTNAME} = Timo</msg>
-<status status="PASS" starttime="20201105 11:49:54.865" endtime="20201105 11:49:54.866"></status>
+<msg timestamp="20201105 13:54:00.978" level="INFO">${GENERATE FIRSTNAME} = Markku</msg>
+<status status="PASS" starttime="20201105 13:54:00.978" endtime="20201105 13:54:00.978"></status>
 </kw>
 <kw name="Generate Lastname" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE LASTNAME}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.866" level="INFO">${GENERATE LASTNAME} = Mäkelä</msg>
-<status status="PASS" starttime="20201105 11:49:54.866" endtime="20201105 11:49:54.866"></status>
+<msg timestamp="20201105 13:54:00.978" level="INFO">${GENERATE LASTNAME} = Kinnunen</msg>
+<status status="PASS" starttime="20201105 13:54:00.978" endtime="20201105 13:54:00.979"></status>
 </kw>
 <kw name="Generate Address" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE ADDRESS}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.866" level="INFO">${GENERATE ADDRESS} = Vuorikuja 14 C</msg>
-<status status="PASS" starttime="20201105 11:49:54.866" endtime="20201105 11:49:54.866"></status>
+<msg timestamp="20201105 13:54:00.979" level="INFO">${GENERATE ADDRESS} = Keskiyönkatu 11 C</msg>
+<status status="PASS" starttime="20201105 13:54:00.979" endtime="20201105 13:54:00.979"></status>
 </kw>
 <kw name="Generate City" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE CITY}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.867" level="INFO">${GENERATE CITY} = Hämeenlinna</msg>
-<status status="PASS" starttime="20201105 11:49:54.867" endtime="20201105 11:49:54.867"></status>
+<msg timestamp="20201105 13:54:00.979" level="INFO">${GENERATE CITY} = Jyväskylä</msg>
+<status status="PASS" starttime="20201105 13:54:00.979" endtime="20201105 13:54:00.979"></status>
 </kw>
 <kw name="Generate State" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE STATE}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.867" level="INFO">${GENERATE STATE} = Kainuu</msg>
-<status status="PASS" starttime="20201105 11:49:54.867" endtime="20201105 11:49:54.867"></status>
+<msg timestamp="20201105 13:54:00.980" level="INFO">${GENERATE STATE} = Varsinais-Suomi</msg>
+<status status="PASS" starttime="20201105 13:54:00.979" endtime="20201105 13:54:00.980"></status>
 </kw>
 <kw name="Generate Zipcode" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE ZIPCODE}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.867" level="INFO">${GENERATE ZIPCODE} = 42100</msg>
-<status status="PASS" starttime="20201105 11:49:54.867" endtime="20201105 11:49:54.867"></status>
+<msg timestamp="20201105 13:54:00.980" level="INFO">${GENERATE ZIPCODE} = 80429</msg>
+<status status="PASS" starttime="20201105 13:54:00.980" endtime="20201105 13:54:00.980"></status>
 </kw>
 <kw name="Generate Phonenumber" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE PHONE}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.868" level="INFO">${GENERATE PHONE} = 503-3219323</msg>
-<status status="PASS" starttime="20201105 11:49:54.868" endtime="20201105 11:49:54.868"></status>
+<msg timestamp="20201105 13:54:00.980" level="INFO">${GENERATE PHONE} = 460-5105485</msg>
+<status status="PASS" starttime="20201105 13:54:00.980" endtime="20201105 13:54:00.980"></status>
 </kw>
 <kw name="Generate Ssn" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE SSN}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.868" level="INFO">${GENERATE SSN} = 315703+277G</msg>
-<status status="PASS" starttime="20201105 11:49:54.868" endtime="20201105 11:49:54.868"></status>
+<msg timestamp="20201105 13:54:00.981" level="INFO">${GENERATE SSN} = 978830+431I</msg>
+<status status="PASS" starttime="20201105 13:54:00.980" endtime="20201105 13:54:00.981"></status>
 </kw>
-<kw name="Generate Firstname" library="GenerateCustomerData">
+<kw name="Generate Username" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE USERNAME}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.868" level="INFO">${GENERATE USERNAME} = Riitta</msg>
-<status status="PASS" starttime="20201105 11:49:54.868" endtime="20201105 11:49:54.868"></status>
+<msg timestamp="20201105 13:54:00.981" level="INFO">${GENERATE USERNAME} = user 254</msg>
+<status status="PASS" starttime="20201105 13:54:00.981" endtime="20201105 13:54:00.981"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${GENERATE USERNAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:54.869" level="INFO">${GENERATE USERNAME} = Riitta</msg>
-<status status="PASS" starttime="20201105 11:49:54.869" endtime="20201105 11:49:54.869"></status>
+<msg timestamp="20201105 13:54:00.982" level="INFO">${GENERATE USERNAME} = user 254</msg>
+<status status="PASS" starttime="20201105 13:54:00.981" endtime="20201105 13:54:00.982"></status>
 </kw>
 <kw name="Generate Password" library="GenerateCustomerData">
 <assign>
 <var>${GENERATE PASSWORD}</var>
 </assign>
-<msg timestamp="20201105 11:49:54.869" level="INFO">${GENERATE PASSWORD} = 2616243838</msg>
-<status status="PASS" starttime="20201105 11:49:54.869" endtime="20201105 11:49:54.869"></status>
+<msg timestamp="20201105 13:54:00.982" level="INFO">${GENERATE PASSWORD} = 2043123113</msg>
+<status status="PASS" starttime="20201105 13:54:00.982" endtime="20201105 13:54:00.982"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${GENERATE PASSWORD}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:54.870" level="INFO">${GENERATE PASSWORD} = 2616243838</msg>
-<status status="PASS" starttime="20201105 11:49:54.869" endtime="20201105 11:49:54.870"></status>
+<msg timestamp="20201105 13:54:00.982" level="INFO">${GENERATE PASSWORD} = 2043123113</msg>
+<status status="PASS" starttime="20201105 13:54:00.982" endtime="20201105 13:54:00.983"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -142,8 +142,8 @@
 <arg>${CUSTOMER FIRSTNAME}</arg>
 <arg>${GENERATE FIRSTNAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:54.870" level="INFO">Typing text 'Timo' into text field 'id=customer.firstName'.</msg>
-<status status="PASS" starttime="20201105 11:49:54.870" endtime="20201105 11:49:54.951"></status>
+<msg timestamp="20201105 13:54:00.983" level="INFO">Typing text 'Markku' into text field 'id=customer.firstName'.</msg>
+<status status="PASS" starttime="20201105 13:54:00.983" endtime="20201105 13:54:01.071"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -151,8 +151,8 @@
 <arg>${CUSTOMER LASTNAME}</arg>
 <arg>${GENERATE LASTNAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:54.951" level="INFO">Typing text 'Mäkelä' into text field 'id=customer.lastName'.</msg>
-<status status="PASS" starttime="20201105 11:49:54.951" endtime="20201105 11:49:55.033"></status>
+<msg timestamp="20201105 13:54:01.072" level="INFO">Typing text 'Kinnunen' into text field 'id=customer.lastName'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.071" endtime="20201105 13:54:01.157"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -160,8 +160,8 @@
 <arg>${CUSTOMER ADDRESS}</arg>
 <arg>${GENERATE ADDRESS}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.034" level="INFO">Typing text 'Vuorikuja 14 C' into text field 'id=customer.address.street'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.034" endtime="20201105 11:49:55.115"></status>
+<msg timestamp="20201105 13:54:01.157" level="INFO">Typing text 'Keskiyönkatu 11 C' into text field 'id=customer.address.street'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.157" endtime="20201105 13:54:01.248"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -169,8 +169,8 @@
 <arg>${CUSTOMER CITY}</arg>
 <arg>${GENERATE CITY}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.115" level="INFO">Typing text 'Hämeenlinna' into text field 'id=customer.address.city'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.115" endtime="20201105 11:49:55.191"></status>
+<msg timestamp="20201105 13:54:01.248" level="INFO">Typing text 'Jyväskylä' into text field 'id=customer.address.city'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.248" endtime="20201105 13:54:01.327"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -178,8 +178,8 @@
 <arg>${CUSTOMER STATE}</arg>
 <arg>${GENERATE STATE}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.192" level="INFO">Typing text 'Kainuu' into text field 'id=customer.address.state'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.192" endtime="20201105 11:49:55.264"></status>
+<msg timestamp="20201105 13:54:01.328" level="INFO">Typing text 'Varsinais-Suomi' into text field 'id=customer.address.state'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.328" endtime="20201105 13:54:01.409"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -187,8 +187,8 @@
 <arg>${CUSTOMER ZIPCODE}</arg>
 <arg>${GENERATE ZIPCODE}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.265" level="INFO">Typing text '42100' into text field 'id=customer.address.zipCode'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.265" endtime="20201105 11:49:55.333"></status>
+<msg timestamp="20201105 13:54:01.409" level="INFO">Typing text '80429' into text field 'id=customer.address.zipCode'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.409" endtime="20201105 13:54:01.482"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -196,8 +196,8 @@
 <arg>${CUSTOMER PHONE}</arg>
 <arg>${GENERATE PHONE}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.334" level="INFO">Typing text '503-3219323' into text field 'id=customer.phoneNumber'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.333" endtime="20201105 11:49:55.408"></status>
+<msg timestamp="20201105 13:54:01.483" level="INFO">Typing text '460-5105485' into text field 'id=customer.phoneNumber'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.483" endtime="20201105 13:54:01.566"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -205,8 +205,8 @@
 <arg>${CUSTOMER SSN}</arg>
 <arg>${GENERATE SSN}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.409" level="INFO">Typing text '315703+277G' into text field 'id=customer.ssn'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.408" endtime="20201105 11:49:55.483"></status>
+<msg timestamp="20201105 13:54:01.567" level="INFO">Typing text '978830+431I' into text field 'id=customer.ssn'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.566" endtime="20201105 13:54:01.648"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -214,8 +214,8 @@
 <arg>${CUSTOMER USERNAME}</arg>
 <arg>${GENERATE USERNAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.483" level="INFO">Typing text 'Riitta' into text field 'id=customer.username'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.483" endtime="20201105 11:49:55.554"></status>
+<msg timestamp="20201105 13:54:01.648" level="INFO">Typing text 'user 254' into text field 'id=customer.username'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.648" endtime="20201105 13:54:01.727"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -223,8 +223,8 @@
 <arg>${CUSTOMER PASSWORD}</arg>
 <arg>${GENERATE PASSWORD}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.555" level="INFO">Typing text '2616243838' into text field 'id=customer.password'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.554" endtime="20201105 11:49:55.630"></status>
+<msg timestamp="20201105 13:54:01.727" level="INFO">Typing text '2043123113' into text field 'id=customer.password'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.727" endtime="20201105 13:54:01.811"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -232,27 +232,27 @@
 <arg>${CUSTOMER CONFIRM}</arg>
 <arg>${GENERATE PASSWORD}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.630" level="INFO">Typing text '2616243838' into text field 'id=repeatedPassword'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.630" endtime="20201105 11:49:55.705"></status>
+<msg timestamp="20201105 13:54:01.811" level="INFO">Typing text '2043123113' into text field 'id=repeatedPassword'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.811" endtime="20201105 13:54:01.901"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${CREATE USER BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:55.706" level="INFO">Clicking button '//td/input[@value='Register']'.</msg>
-<status status="PASS" starttime="20201105 11:49:55.706" endtime="20201105 11:49:56.714"></status>
+<msg timestamp="20201105 13:54:01.901" level="INFO">Clicking button '//td/input[@value='Register']'.</msg>
+<status status="PASS" starttime="20201105 13:54:01.901" endtime="20201105 13:54:02.306"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${USER CREATED TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:56.714" endtime="20201105 11:49:56.736"></status>
+<status status="PASS" starttime="20201105 13:54:02.306" endtime="20201105 13:54:02.327"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:54.362" endtime="20201105 11:49:56.736"></status>
+<status status="PASS" starttime="20201105 13:53:59.797" endtime="20201105 13:54:02.327"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:54.362" endtime="20201105 11:49:56.736" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:53:59.796" endtime="20201105 13:54:02.328" critical="yes"></status>
 </test>
 <test id="s1-t3" name="Log out of ParaBank">
 <kw name="Log out" library="keywords">
@@ -261,12 +261,12 @@
 <arguments>
 <arg>${LOG OUT LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:56.739" level="INFO">Clicking link '//ul/li/a[text()='Log Out']'.</msg>
-<status status="PASS" starttime="20201105 11:49:56.738" endtime="20201105 11:49:57.913"></status>
+<msg timestamp="20201105 13:54:02.330" level="INFO">Clicking link '//ul/li/a[text()='Log Out']'.</msg>
+<status status="PASS" starttime="20201105 13:54:02.330" endtime="20201105 13:54:03.432"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:56.738" endtime="20201105 11:49:57.913"></status>
+<status status="PASS" starttime="20201105 13:54:02.329" endtime="20201105 13:54:03.432"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:56.738" endtime="20201105 11:49:57.914" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:54:02.329" endtime="20201105 13:54:03.434" critical="yes"></status>
 </test>
 <test id="s1-t4" name="Login with wrong credentials">
 <kw name="Wrong password" library="keywords">
@@ -275,7 +275,7 @@
 <arguments>
 <arg>${PASSWORD INPUT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:57.918" endtime="20201105 11:49:57.937"></status>
+<status status="PASS" starttime="20201105 13:54:03.437" endtime="20201105 13:54:03.463"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -283,8 +283,8 @@
 <arg>${USERNAME INPUT}</arg>
 <arg>${GENERATE USERNAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:57.938" level="INFO">Typing text 'Riitta' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20201105 11:49:57.938" endtime="20201105 11:49:58.003"></status>
+<msg timestamp="20201105 13:54:03.464" level="INFO">Typing text 'user 254' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20201105 13:54:03.463" endtime="20201105 13:54:03.548"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -292,23 +292,23 @@
 <arg>${PASSWORD INPUT}</arg>
 <arg>wrong</arg>
 </arguments>
-<msg timestamp="20201105 11:49:58.003" level="INFO">Typing text 'wrong' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20201105 11:49:58.003" endtime="20201105 11:49:58.075"></status>
+<msg timestamp="20201105 13:54:03.548" level="INFO">Typing text 'wrong' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201105 13:54:03.548" endtime="20201105 13:54:03.640"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${LOGIN BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:58.076" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
-<status status="PASS" starttime="20201105 11:49:58.076" endtime="20201105 11:49:58.947"></status>
+<msg timestamp="20201105 13:54:03.640" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
+<status status="PASS" starttime="20201105 13:54:03.640" endtime="20201105 13:54:03.987"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${ERROR MESSAGE TEXT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:58.947" endtime="20201105 11:49:58.972"></status>
+<status status="PASS" starttime="20201105 13:54:03.987" endtime="20201105 13:54:04.008"></status>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
@@ -316,10 +316,10 @@
 <arg>${ERROR MESSAGE TEXT}</arg>
 <arg>${ERROR MESSAGE 1}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:58.973" level="INFO">Verifying element 'class=error' contains exact text 'The username and password could not be verified.'.</msg>
-<status status="PASS" starttime="20201105 11:49:58.972" endtime="20201105 11:49:58.994"></status>
+<msg timestamp="20201105 13:54:04.009" level="INFO">Verifying element 'class=error' contains exact text 'The username and password could not be verified.'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.008" endtime="20201105 13:54:04.027"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:57.917" endtime="20201105 11:49:58.994"></status>
+<status status="PASS" starttime="20201105 13:54:03.437" endtime="20201105 13:54:04.028"></status>
 </kw>
 <kw name="Wrong username" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -327,7 +327,7 @@
 <arguments>
 <arg>${USERNAME INPUT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:58.995" endtime="20201105 11:49:59.011"></status>
+<status status="PASS" starttime="20201105 13:54:04.029" endtime="20201105 13:54:04.044"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -335,8 +335,8 @@
 <arg>${USERNAME INPUT}</arg>
 <arg>wrong</arg>
 </arguments>
-<msg timestamp="20201105 11:49:59.012" level="INFO">Typing text 'wrong' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20201105 11:49:59.011" endtime="20201105 11:49:59.079"></status>
+<msg timestamp="20201105 13:54:04.044" level="INFO">Typing text 'wrong' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.044" endtime="20201105 13:54:04.104"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -344,23 +344,23 @@
 <arg>${PASSWORD INPUT}</arg>
 <arg>${GENERATE PASSWORD}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:59.080" level="INFO">Typing text '2616243838' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20201105 11:49:59.079" endtime="20201105 11:49:59.167"></status>
+<msg timestamp="20201105 13:54:04.105" level="INFO">Typing text '2043123113' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.105" endtime="20201105 13:54:04.181"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${LOGIN BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:59.168" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
-<status status="PASS" starttime="20201105 11:49:59.168" endtime="20201105 11:49:59.493"></status>
+<msg timestamp="20201105 13:54:04.181" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.181" endtime="20201105 13:54:04.520"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${ERROR MESSAGE TEXT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:59.494" endtime="20201105 11:49:59.514"></status>
+<status status="PASS" starttime="20201105 13:54:04.521" endtime="20201105 13:54:04.540"></status>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
@@ -368,10 +368,10 @@
 <arg>${ERROR MESSAGE TEXT}</arg>
 <arg>${ERROR MESSAGE 1}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:59.515" level="INFO">Verifying element 'class=error' contains exact text 'The username and password could not be verified.'.</msg>
-<status status="PASS" starttime="20201105 11:49:59.515" endtime="20201105 11:49:59.534"></status>
+<msg timestamp="20201105 13:54:04.541" level="INFO">Verifying element 'class=error' contains exact text 'The username and password could not be verified.'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.540" endtime="20201105 13:54:04.559"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:58.995" endtime="20201105 11:49:59.534"></status>
+<status status="PASS" starttime="20201105 13:54:04.028" endtime="20201105 13:54:04.559"></status>
 </kw>
 <kw name="Wrong both" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -379,14 +379,14 @@
 <arguments>
 <arg>${USERNAME INPUT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:59.535" endtime="20201105 11:49:59.553"></status>
+<status status="PASS" starttime="20201105 13:54:04.560" endtime="20201105 13:54:04.579"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${PASSWORD INPUT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:49:59.553" endtime="20201105 11:49:59.574"></status>
+<status status="PASS" starttime="20201105 13:54:04.579" endtime="20201105 13:54:04.600"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -394,8 +394,8 @@
 <arg>${USERNAME INPUT}</arg>
 <arg>wrong</arg>
 </arguments>
-<msg timestamp="20201105 11:49:59.574" level="INFO">Typing text 'wrong' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20201105 11:49:59.574" endtime="20201105 11:49:59.636"></status>
+<msg timestamp="20201105 13:54:04.601" level="INFO">Typing text 'wrong' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.600" endtime="20201105 13:54:04.665"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -403,23 +403,23 @@
 <arg>${PASSWORD INPUT}</arg>
 <arg>wrong</arg>
 </arguments>
-<msg timestamp="20201105 11:49:59.636" level="INFO">Typing text 'wrong' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20201105 11:49:59.636" endtime="20201105 11:49:59.714"></status>
+<msg timestamp="20201105 13:54:04.667" level="INFO">Typing text 'wrong' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.666" endtime="20201105 13:54:04.745"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${LOGIN BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:49:59.715" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
-<status status="PASS" starttime="20201105 11:49:59.714" endtime="20201105 11:50:00.302"></status>
+<msg timestamp="20201105 13:54:04.745" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
+<status status="PASS" starttime="20201105 13:54:04.745" endtime="20201105 13:54:05.365"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${ERROR MESSAGE TEXT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:00.302" endtime="20201105 11:50:00.322"></status>
+<status status="PASS" starttime="20201105 13:54:05.366" endtime="20201105 13:54:05.387"></status>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
@@ -427,12 +427,12 @@
 <arg>${ERROR MESSAGE TEXT}</arg>
 <arg>${ERROR MESSAGE 1}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:00.323" level="INFO">Verifying element 'class=error' contains exact text 'The username and password could not be verified.'.</msg>
-<status status="PASS" starttime="20201105 11:50:00.322" endtime="20201105 11:50:00.341"></status>
+<msg timestamp="20201105 13:54:05.387" level="INFO">Verifying element 'class=error' contains exact text 'The username and password could not be verified.'.</msg>
+<status status="PASS" starttime="20201105 13:54:05.387" endtime="20201105 13:54:05.406"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:59.535" endtime="20201105 11:50:00.342"></status>
+<status status="PASS" starttime="20201105 13:54:04.560" endtime="20201105 13:54:05.406"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:57.916" endtime="20201105 11:50:00.342" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:54:03.436" endtime="20201105 13:54:05.407" critical="yes"></status>
 </test>
 <test id="s1-t5" name="Login with right credentials">
 <kw name="Login into ParaBank" library="keywords">
@@ -441,14 +441,14 @@
 <arguments>
 <arg>${USERNAME INPUT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:00.344" endtime="20201105 11:50:00.361"></status>
+<status status="PASS" starttime="20201105 13:54:05.410" endtime="20201105 13:54:05.427"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${PASSWORD INPUT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:00.361" endtime="20201105 11:50:00.380"></status>
+<status status="PASS" starttime="20201105 13:54:05.427" endtime="20201105 13:54:05.444"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -456,8 +456,8 @@
 <arg>${USERNAME INPUT}</arg>
 <arg>${GENERATE USERNAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:00.381" level="INFO">Typing text 'Riitta' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20201105 11:50:00.380" endtime="20201105 11:50:00.444"></status>
+<msg timestamp="20201105 13:54:05.445" level="INFO">Typing text 'user 254' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20201105 13:54:05.445" endtime="20201105 13:54:05.511"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -465,27 +465,27 @@
 <arg>${PASSWORD INPUT}</arg>
 <arg>${GENERATE PASSWORD}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:00.444" level="INFO">Typing text '2616243838' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20201105 11:50:00.444" endtime="20201105 11:50:00.527"></status>
+<msg timestamp="20201105 13:54:05.512" level="INFO">Typing text '2043123113' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201105 13:54:05.511" endtime="20201105 13:54:05.595"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${LOGIN BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:00.528" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
-<status status="PASS" starttime="20201105 11:50:00.527" endtime="20201105 11:50:01.665"></status>
+<msg timestamp="20201105 13:54:05.595" level="INFO">Clicking button '//input[@value='Log In']'.</msg>
+<status status="PASS" starttime="20201105 13:54:05.595" endtime="20201105 13:54:06.253"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${ACCOUNTS TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:01.665" endtime="20201105 11:50:01.690"></status>
+<status status="PASS" starttime="20201105 13:54:06.253" endtime="20201105 13:54:06.278"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:00.344" endtime="20201105 11:50:01.690"></status>
+<status status="PASS" starttime="20201105 13:54:05.409" endtime="20201105 13:54:06.278"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:00.343" endtime="20201105 11:50:01.691" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:54:05.409" endtime="20201105 13:54:06.279" critical="yes"></status>
 </test>
 <test id="s1-t6" name="Open new bank account">
 <kw name="Open new account" library="keywords">
@@ -494,56 +494,56 @@
 <arguments>
 <arg>${NEW ACCOUNT LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:01.695" level="INFO">Clicking link '//ul/li/a[text()='Open New Account']'.</msg>
-<status status="PASS" starttime="20201105 11:50:01.695" endtime="20201105 11:50:02.047"></status>
+<msg timestamp="20201105 13:54:06.282" level="INFO">Clicking link '//ul/li/a[text()='Open New Account']'.</msg>
+<status status="PASS" starttime="20201105 13:54:06.282" endtime="20201105 13:54:06.667"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${NEW ACCOUNT TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:02.048" endtime="20201105 11:50:02.073"></status>
+<status status="PASS" starttime="20201105 13:54:06.667" endtime="20201105 13:54:06.693"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${ACCOUNT TYPE SELECTOR}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:02.073" level="INFO">Clicking element '//select[@id='type']'.</msg>
-<status status="PASS" starttime="20201105 11:50:02.073" endtime="20201105 11:50:02.136"></status>
+<msg timestamp="20201105 13:54:06.694" level="INFO">Clicking element '//select[@id='type']'.</msg>
+<status status="PASS" starttime="20201105 13:54:06.694" endtime="20201105 13:54:06.765"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${ACCOUNT SAVINGS BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:02.138" level="INFO">Clicking element '//select/option[@value=1]'.</msg>
-<status status="PASS" starttime="20201105 11:50:02.137" endtime="20201105 11:50:02.175"></status>
+<msg timestamp="20201105 13:54:06.766" level="INFO">Clicking element '//select/option[@value=1]'.</msg>
+<status status="PASS" starttime="20201105 13:54:06.765" endtime="20201105 13:54:06.802"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>0.5s</arg>
 </arguments>
-<msg timestamp="20201105 11:50:02.678" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20201105 11:50:02.176" endtime="20201105 11:50:02.678"></status>
+<msg timestamp="20201105 13:54:07.303" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20201105 13:54:06.802" endtime="20201105 13:54:07.303"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${NEW ACCOUNT BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:02.678" level="INFO">Clicking button '//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20201105 11:50:02.678" endtime="20201105 11:50:02.738"></status>
+<msg timestamp="20201105 13:54:07.303" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20201105 13:54:07.303" endtime="20201105 13:54:07.365"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${ACCOUNT OPENED TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:02.738" endtime="20201105 11:50:02.975"></status>
+<status status="PASS" starttime="20201105 13:54:07.365" endtime="20201105 13:54:07.802"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:01.694" endtime="20201105 11:50:02.975"></status>
+<status status="PASS" starttime="20201105 13:54:06.281" endtime="20201105 13:54:07.802"></status>
 </kw>
 <kw name="Validate New Account" library="keywords">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -554,74 +554,240 @@
 <assign>
 <var>${ACCOUNT NUMBER}</var>
 </assign>
-<msg timestamp="20201105 11:50:02.999" level="INFO">${ACCOUNT NUMBER} = 17229</msg>
-<status status="PASS" starttime="20201105 11:50:02.977" endtime="20201105 11:50:02.999"></status>
+<msg timestamp="20201105 13:54:07.827" level="INFO">${ACCOUNT NUMBER} = 21780</msg>
+<status status="PASS" starttime="20201105 13:54:07.803" endtime="20201105 13:54:07.827"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${ACCOUNT NUMBER}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:03.000" level="INFO">${ACCOUNT NUMBER} = 17229</msg>
-<status status="PASS" starttime="20201105 11:50:02.999" endtime="20201105 11:50:03.000"></status>
+<msg timestamp="20201105 13:54:07.827" level="INFO">${ACCOUNT NUMBER} = 21780</msg>
+<status status="PASS" starttime="20201105 13:54:07.827" endtime="20201105 13:54:07.828"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${ACCOUNTS OVERVIEW LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:03.000" level="INFO">Clicking link '//ul/li/a[text()='Accounts Overview']'.</msg>
-<status status="PASS" starttime="20201105 11:50:03.000" endtime="20201105 11:50:03.333"></status>
+<msg timestamp="20201105 13:54:07.828" level="INFO">Clicking link '//ul/li/a[text()='Accounts Overview']'.</msg>
+<status status="PASS" starttime="20201105 13:54:07.828" endtime="20201105 13:54:08.719"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>${ACCOUNT NUMBER}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:03.333" endtime="20201105 11:50:03.560"></status>
+<status status="PASS" starttime="20201105 13:54:08.719" endtime="20201105 13:54:08.942"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${ACCOUNT NUMBER}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:03.561" level="INFO">Clicking link '17229'.</msg>
-<status status="PASS" starttime="20201105 11:50:03.561" endtime="20201105 11:50:03.932"></status>
+<msg timestamp="20201105 13:54:08.942" level="INFO">Clicking link '21780'.</msg>
+<status status="PASS" starttime="20201105 13:54:08.942" endtime="20201105 13:54:09.310"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${ACCOUNT DETAILS TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:03.932" endtime="20201105 11:50:03.957"></status>
+<status status="PASS" starttime="20201105 13:54:09.310" endtime="20201105 13:54:09.336"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${ACCOUNT TYPE SAVINGS}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:03.957" endtime="20201105 11:50:04.187"></status>
+<status status="PASS" starttime="20201105 13:54:09.336" endtime="20201105 13:54:09.583"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:02.976" endtime="20201105 11:50:04.187"></status>
+<status status="PASS" starttime="20201105 13:54:07.803" endtime="20201105 13:54:09.583"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:01.692" endtime="20201105 11:50:04.188" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:54:06.280" endtime="20201105 13:54:09.584" critical="yes"></status>
 </test>
-<test id="s1-t7" name="Apply for a Loan">
+<test id="s1-t7" name="Pay bills to different account">
+<kw name="Pay bills" library="keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${BILL PAY LINK}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:09.587" level="INFO">Clicking link '//ul/li/a[text()='Bill Pay']'.</msg>
+<status status="PASS" starttime="20201105 13:54:09.587" endtime="20201105 13:54:09.967"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${BILL PAY TITLE}</arg>
+</arguments>
+<status status="PASS" starttime="20201105 13:54:09.968" endtime="20201105 13:54:09.995"></status>
+</kw>
+<kw name="Generate Firstname" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PAYEE NAME}</var>
+</assign>
+<msg timestamp="20201105 13:54:09.996" level="INFO">${GENERATE PAYEE NAME} = Janne</msg>
+<status status="PASS" starttime="20201105 13:54:09.996" endtime="20201105 13:54:09.996"></status>
+</kw>
+<kw name="Generate Address" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PAYEE ADDRESS}</var>
+</assign>
+<msg timestamp="20201105 13:54:09.996" level="INFO">${GENERATE PAYEE ADDRESS} = Lohikuja 14 A</msg>
+<status status="PASS" starttime="20201105 13:54:09.996" endtime="20201105 13:54:09.996"></status>
+</kw>
+<kw name="Generate City" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PAYEE CITY}</var>
+</assign>
+<msg timestamp="20201105 13:54:09.997" level="INFO">${GENERATE PAYEE CITY} = Turku</msg>
+<status status="PASS" starttime="20201105 13:54:09.996" endtime="20201105 13:54:09.997"></status>
+</kw>
+<kw name="Generate State" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PAYEE STATE}</var>
+</assign>
+<msg timestamp="20201105 13:54:09.997" level="INFO">${GENERATE PAYEE STATE} = Satakunta</msg>
+<status status="PASS" starttime="20201105 13:54:09.997" endtime="20201105 13:54:09.997"></status>
+</kw>
+<kw name="Generate Zipcode" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PAYEE ZIPCODE}</var>
+</assign>
+<msg timestamp="20201105 13:54:09.997" level="INFO">${GENERATE PAYEE ZIPCODE} = 58566</msg>
+<status status="PASS" starttime="20201105 13:54:09.997" endtime="20201105 13:54:09.997"></status>
+</kw>
+<kw name="Generate Phonenumber" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PAYEE PHONE}</var>
+</assign>
+<msg timestamp="20201105 13:54:09.998" level="INFO">${GENERATE PAYEE PHONE} = 387-5124748</msg>
+<status status="PASS" starttime="20201105 13:54:09.997" endtime="20201105 13:54:09.998"></status>
+</kw>
+<kw name="Generate Payee Account" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PAYEE ACCOUNT}</var>
+</assign>
+<msg timestamp="20201105 13:54:09.998" level="INFO">${GENERATE PAYEE ACCOUNT} = 80101</msg>
+<status status="PASS" starttime="20201105 13:54:09.998" endtime="20201105 13:54:09.998"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAYEE NAME}</arg>
+<arg>${GENERATE PAYEE NAME}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:09.998" level="INFO">Typing text 'Janne' into text field 'name=payee.name'.</msg>
+<status status="PASS" starttime="20201105 13:54:09.998" endtime="20201105 13:54:10.092"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAYEE ADDRESS}</arg>
+<arg>${GENERATE PAYEE ADDRESS}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.093" level="INFO">Typing text 'Lohikuja 14 A' into text field 'name=payee.address.street'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.092" endtime="20201105 13:54:10.187"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAYEE CITY}</arg>
+<arg>${GENERATE PAYEE CITY}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.187" level="INFO">Typing text 'Turku' into text field 'name=payee.address.city'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.187" endtime="20201105 13:54:10.275"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAYEE STATE}</arg>
+<arg>${GENERATE PAYEE STATE}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.276" level="INFO">Typing text 'Satakunta' into text field 'name=payee.address.state'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.276" endtime="20201105 13:54:10.363"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAYEE ZIPCODE}</arg>
+<arg>${GENERATE PAYEE ZIPCODE}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.363" level="INFO">Typing text '58566' into text field 'name=payee.address.zipCode'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.363" endtime="20201105 13:54:10.443"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAYEE PHONE}</arg>
+<arg>${GENERATE PAYEE PHONE}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.444" level="INFO">Typing text '387-5124748' into text field 'name=payee.phoneNumber'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.444" endtime="20201105 13:54:10.530"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAYEE ACCOUNT}</arg>
+<arg>${GENERATE PAYEE ACCOUNT}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.531" level="INFO">Typing text '80101' into text field 'name=payee.accountNumber'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.530" endtime="20201105 13:54:10.612"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CONFIRM ACCOUNT}</arg>
+<arg>${GENERATE PAYEE ACCOUNT}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.612" level="INFO">Typing text '80101' into text field 'name=verifyAccount'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.612" endtime="20201105 13:54:10.706"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PAY AMOUNT}</arg>
+<arg>25</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.706" level="INFO">Typing text '25' into text field 'name=amount'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.706" endtime="20201105 13:54:10.795"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${SEND PAYMENT BUTTON}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:10.795" level="INFO">Clicking button '//td/input[@value='Send Payment']'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.795" endtime="20201105 13:54:10.851"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${PAYMENT SENT TITLE}</arg>
+</arguments>
+<status status="PASS" starttime="20201105 13:54:10.851" endtime="20201105 13:54:10.869"></status>
+</kw>
+<status status="PASS" starttime="20201105 13:54:09.586" endtime="20201105 13:54:10.869"></status>
+</kw>
+<status status="PASS" starttime="20201105 13:54:09.586" endtime="20201105 13:54:10.870" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Apply for a Loan">
 <kw name="Request loan succsessful" library="keywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${LOAN LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:04.194" level="INFO">Clicking link '//ul/li/a[text()='Request Loan']'.</msg>
-<status status="PASS" starttime="20201105 11:50:04.194" endtime="20201105 11:50:04.556"></status>
+<msg timestamp="20201105 13:54:10.873" level="INFO">Clicking link '//ul/li/a[text()='Request Loan']'.</msg>
+<status status="PASS" starttime="20201105 13:54:10.872" endtime="20201105 13:54:11.241"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${REQUEST LOAN TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:04.557" endtime="20201105 11:50:04.577"></status>
+<status status="PASS" starttime="20201105 13:54:11.242" endtime="20201105 13:54:11.260"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -629,8 +795,8 @@
 <arg>${LOAN AMOUNT INPUT}</arg>
 <arg>10</arg>
 </arguments>
-<msg timestamp="20201105 11:50:04.578" level="INFO">Typing text '10' into text field '//*[@id='amount']'.</msg>
-<status status="PASS" starttime="20201105 11:50:04.577" endtime="20201105 11:50:04.661"></status>
+<msg timestamp="20201105 13:54:11.260" level="INFO">Typing text '10' into text field '//*[@id='amount']'.</msg>
+<status status="PASS" starttime="20201105 13:54:11.260" endtime="20201105 13:54:11.352"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -638,25 +804,25 @@
 <arg>${DOWN PAYMENT INPUT}</arg>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20201105 11:50:04.662" level="INFO">Typing text '5' into text field '//*[@id='downPayment']'.</msg>
-<status status="PASS" starttime="20201105 11:50:04.661" endtime="20201105 11:50:04.747"></status>
+<msg timestamp="20201105 13:54:11.352" level="INFO">Typing text '5' into text field '//*[@id='downPayment']'.</msg>
+<status status="PASS" starttime="20201105 13:54:11.352" endtime="20201105 13:54:11.432"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${APPLY LOAN BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:04.747" level="INFO">Clicking button '//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20201105 11:50:04.747" endtime="20201105 11:50:04.812"></status>
+<msg timestamp="20201105 13:54:11.432" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20201105 13:54:11.432" endtime="20201105 13:54:11.481"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${LOAN APPROVED TEXT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:04.812" endtime="20201105 11:50:05.261"></status>
+<status status="PASS" starttime="20201105 13:54:11.481" endtime="20201105 13:54:11.917"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:04.194" endtime="20201105 11:50:05.261"></status>
+<status status="PASS" starttime="20201105 13:54:10.872" endtime="20201105 13:54:11.917"></status>
 </kw>
 <kw name="Request loan fail" library="keywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -664,15 +830,15 @@
 <arguments>
 <arg>${LOAN LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:05.262" level="INFO">Clicking link '//ul/li/a[text()='Request Loan']'.</msg>
-<status status="PASS" starttime="20201105 11:50:05.262" endtime="20201105 11:50:05.584"></status>
+<msg timestamp="20201105 13:54:11.919" level="INFO">Clicking link '//ul/li/a[text()='Request Loan']'.</msg>
+<status status="PASS" starttime="20201105 13:54:11.918" endtime="20201105 13:54:12.262"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${REQUEST LOAN TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:05.584" endtime="20201105 11:50:05.604"></status>
+<status status="PASS" starttime="20201105 13:54:12.262" endtime="20201105 13:54:12.282"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -680,8 +846,8 @@
 <arg>${LOAN AMOUNT INPUT}</arg>
 <arg>1000</arg>
 </arguments>
-<msg timestamp="20201105 11:50:05.604" level="INFO">Typing text '1000' into text field '//*[@id='amount']'.</msg>
-<status status="PASS" starttime="20201105 11:50:05.604" endtime="20201105 11:50:05.684"></status>
+<msg timestamp="20201105 13:54:12.282" level="INFO">Typing text '1000' into text field '//*[@id='amount']'.</msg>
+<status status="PASS" starttime="20201105 13:54:12.282" endtime="20201105 13:54:12.368"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -689,52 +855,52 @@
 <arg>${DOWN PAYMENT INPUT}</arg>
 <arg>1000</arg>
 </arguments>
-<msg timestamp="20201105 11:50:05.684" level="INFO">Typing text '1000' into text field '//*[@id='downPayment']'.</msg>
-<status status="PASS" starttime="20201105 11:50:05.684" endtime="20201105 11:50:05.765"></status>
+<msg timestamp="20201105 13:54:12.369" level="INFO">Typing text '1000' into text field '//*[@id='downPayment']'.</msg>
+<status status="PASS" starttime="20201105 13:54:12.368" endtime="20201105 13:54:12.450"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${APPLY LOAN BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:05.766" level="INFO">Clicking button '//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20201105 11:50:05.766" endtime="20201105 11:50:05.819"></status>
+<msg timestamp="20201105 13:54:12.451" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20201105 13:54:12.450" endtime="20201105 13:54:12.504"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${LOAN FAIL TEXT}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:05.820" endtime="20201105 11:50:06.254"></status>
+<status status="PASS" starttime="20201105 13:54:12.504" endtime="20201105 13:54:12.940"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:05.262" endtime="20201105 11:50:06.255"></status>
+<status status="PASS" starttime="20201105 13:54:11.918" endtime="20201105 13:54:12.940"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:04.191" endtime="20201105 11:50:06.255" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:54:10.871" endtime="20201105 13:54:12.940" critical="yes"></status>
 </test>
-<test id="s1-t8" name="Transfer funds to different account">
+<test id="s1-t9" name="Transfer funds to different account">
 <kw name="Transfer funds" library="keywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${TRANSFER FUNDS LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:06.258" level="INFO">Clicking link '//ul/li/a[text()='Transfer Funds']'.</msg>
-<status status="PASS" starttime="20201105 11:50:06.258" endtime="20201105 11:50:07.196"></status>
+<msg timestamp="20201105 13:54:12.944" level="INFO">Clicking link '//ul/li/a[text()='Transfer Funds']'.</msg>
+<status status="PASS" starttime="20201105 13:54:12.944" endtime="20201105 13:54:13.287"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>0.5s</arg>
 </arguments>
-<msg timestamp="20201105 11:50:07.698" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20201105 11:50:07.196" endtime="20201105 11:50:07.698"></status>
+<msg timestamp="20201105 13:54:13.789" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20201105 13:54:13.288" endtime="20201105 13:54:13.789"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${TRANSFER FUNDS TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:07.698" endtime="20201105 11:50:07.721"></status>
+<status status="PASS" starttime="20201105 13:54:13.789" endtime="20201105 13:54:13.811"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -742,48 +908,48 @@
 <arg>${TRANSFER AMOUNT}</arg>
 <arg>50</arg>
 </arguments>
-<msg timestamp="20201105 11:50:07.722" level="INFO">Typing text '50' into text field '//input[@id='amount']'.</msg>
-<status status="PASS" starttime="20201105 11:50:07.721" endtime="20201105 11:50:07.812"></status>
+<msg timestamp="20201105 13:54:13.811" level="INFO">Typing text '50' into text field '//input[@id='amount']'.</msg>
+<status status="PASS" starttime="20201105 13:54:13.811" endtime="20201105 13:54:13.887"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${TRANSFER TO SELECTOR}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:07.812" level="INFO">Clicking element '//select[@id='toAccountId']'.</msg>
-<status status="PASS" starttime="20201105 11:50:07.812" endtime="20201105 11:50:07.934"></status>
+<msg timestamp="20201105 13:54:13.888" level="INFO">Clicking element '//select[@id='toAccountId']'.</msg>
+<status status="PASS" starttime="20201105 13:54:13.887" endtime="20201105 13:54:13.947"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>//select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:07.935" endtime="20201105 11:50:07.967"></status>
+<status status="PASS" starttime="20201105 13:54:13.947" endtime="20201105 13:54:13.971"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>//select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]</arg>
 </arguments>
-<msg timestamp="20201105 11:50:07.968" level="INFO">Clicking element '//select[@id='toAccountId']/option[@value=17229]'.</msg>
-<status status="PASS" starttime="20201105 11:50:07.967" endtime="20201105 11:50:08.041"></status>
+<msg timestamp="20201105 13:54:13.972" level="INFO">Clicking element '//select[@id='toAccountId']/option[@value=21780]'.</msg>
+<status status="PASS" starttime="20201105 13:54:13.971" endtime="20201105 13:54:14.003"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${TRANSFER BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:08.041" level="INFO">Clicking button '//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20201105 11:50:08.041" endtime="20201105 11:50:08.130"></status>
+<msg timestamp="20201105 13:54:14.003" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20201105 13:54:14.003" endtime="20201105 13:54:14.054"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${FUNDS TRANSFERED TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:08.131" endtime="20201105 11:50:08.578"></status>
+<status status="PASS" starttime="20201105 13:54:14.054" endtime="20201105 13:54:14.489"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:06.258" endtime="20201105 11:50:08.578"></status>
+<status status="PASS" starttime="20201105 13:54:12.943" endtime="20201105 13:54:14.489"></status>
 </kw>
 <kw name="Transfer negative funds" library="keywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -791,23 +957,23 @@
 <arguments>
 <arg>${TRANSFER FUNDS LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:08.579" level="INFO">Clicking link '//ul/li/a[text()='Transfer Funds']'.</msg>
-<status status="PASS" starttime="20201105 11:50:08.579" endtime="20201105 11:50:08.919"></status>
+<msg timestamp="20201105 13:54:14.490" level="INFO">Clicking link '//ul/li/a[text()='Transfer Funds']'.</msg>
+<status status="PASS" starttime="20201105 13:54:14.490" endtime="20201105 13:54:14.821"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>0.5s</arg>
 </arguments>
-<msg timestamp="20201105 11:50:09.421" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20201105 11:50:08.919" endtime="20201105 11:50:09.421"></status>
+<msg timestamp="20201105 13:54:15.321" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20201105 13:54:14.821" endtime="20201105 13:54:15.321"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${TRANSFER FUNDS TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:09.421" endtime="20201105 11:50:09.442"></status>
+<status status="PASS" starttime="20201105 13:54:15.321" endtime="20201105 13:54:15.343"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -815,48 +981,48 @@
 <arg>${TRANSFER AMOUNT}</arg>
 <arg>-100</arg>
 </arguments>
-<msg timestamp="20201105 11:50:09.442" level="INFO">Typing text '-100' into text field '//input[@id='amount']'.</msg>
-<status status="PASS" starttime="20201105 11:50:09.442" endtime="20201105 11:50:09.522"></status>
+<msg timestamp="20201105 13:54:15.344" level="INFO">Typing text '-100' into text field '//input[@id='amount']'.</msg>
+<status status="PASS" starttime="20201105 13:54:15.343" endtime="20201105 13:54:15.421"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${TRANSFER TO SELECTOR}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:09.522" level="INFO">Clicking element '//select[@id='toAccountId']'.</msg>
-<status status="PASS" starttime="20201105 11:50:09.522" endtime="20201105 11:50:09.598"></status>
+<msg timestamp="20201105 13:54:15.421" level="INFO">Clicking element '//select[@id='toAccountId']'.</msg>
+<status status="PASS" starttime="20201105 13:54:15.421" endtime="20201105 13:54:15.483"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>//select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:09.599" endtime="20201105 11:50:09.618"></status>
+<status status="PASS" starttime="20201105 13:54:15.484" endtime="20201105 13:54:15.503"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>//select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]</arg>
 </arguments>
-<msg timestamp="20201105 11:50:09.618" level="INFO">Clicking element '//select[@id='toAccountId']/option[@value=17229]'.</msg>
-<status status="PASS" starttime="20201105 11:50:09.618" endtime="20201105 11:50:09.644"></status>
+<msg timestamp="20201105 13:54:15.503" level="INFO">Clicking element '//select[@id='toAccountId']/option[@value=21780]'.</msg>
+<status status="PASS" starttime="20201105 13:54:15.503" endtime="20201105 13:54:15.538"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${TRANSFER BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:09.644" level="INFO">Clicking button '//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20201105 11:50:09.644" endtime="20201105 11:50:09.717"></status>
+<msg timestamp="20201105 13:54:15.538" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20201105 13:54:15.538" endtime="20201105 13:54:15.591"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${FUNDS TRANSFERED TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:09.717" endtime="20201105 11:50:10.163"></status>
+<status status="PASS" starttime="20201105 13:54:15.591" endtime="20201105 13:54:16.023"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:08.579" endtime="20201105 11:50:10.164"></status>
+<status status="PASS" starttime="20201105 13:54:14.489" endtime="20201105 13:54:16.023"></status>
 </kw>
 <kw name="Transfer too many funds" library="keywords">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -864,23 +1030,23 @@
 <arguments>
 <arg>${TRANSFER FUNDS LINK}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:10.165" level="INFO">Clicking link '//ul/li/a[text()='Transfer Funds']'.</msg>
-<status status="PASS" starttime="20201105 11:50:10.165" endtime="20201105 11:50:10.488"></status>
+<msg timestamp="20201105 13:54:16.024" level="INFO">Clicking link '//ul/li/a[text()='Transfer Funds']'.</msg>
+<status status="PASS" starttime="20201105 13:54:16.024" endtime="20201105 13:54:16.361"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>0.5s</arg>
 </arguments>
-<msg timestamp="20201105 11:50:10.989" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20201105 11:50:10.488" endtime="20201105 11:50:10.989"></status>
+<msg timestamp="20201105 13:54:16.864" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20201105 13:54:16.361" endtime="20201105 13:54:16.864"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${TRANSFER FUNDS TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:10.989" endtime="20201105 11:50:11.066"></status>
+<status status="PASS" starttime="20201105 13:54:16.864" endtime="20201105 13:54:16.882"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -888,91 +1054,239 @@
 <arg>${TRANSFER AMOUNT}</arg>
 <arg>100000</arg>
 </arguments>
-<msg timestamp="20201105 11:50:11.066" level="INFO">Typing text '100000' into text field '//input[@id='amount']'.</msg>
-<status status="PASS" starttime="20201105 11:50:11.066" endtime="20201105 11:50:11.163"></status>
+<msg timestamp="20201105 13:54:16.882" level="INFO">Typing text '100000' into text field '//input[@id='amount']'.</msg>
+<status status="PASS" starttime="20201105 13:54:16.882" endtime="20201105 13:54:16.960"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${TRANSFER TO SELECTOR}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:11.163" level="INFO">Clicking element '//select[@id='toAccountId']'.</msg>
-<status status="PASS" starttime="20201105 11:50:11.163" endtime="20201105 11:50:11.236"></status>
+<msg timestamp="20201105 13:54:16.960" level="INFO">Clicking element '//select[@id='toAccountId']'.</msg>
+<status status="PASS" starttime="20201105 13:54:16.960" endtime="20201105 13:54:17.018"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>//select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:11.237" endtime="20201105 11:50:11.266"></status>
+<status status="PASS" starttime="20201105 13:54:17.018" endtime="20201105 13:54:17.039"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>//select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]</arg>
 </arguments>
-<msg timestamp="20201105 11:50:11.266" level="INFO">Clicking element '//select[@id='toAccountId']/option[@value=17229]'.</msg>
-<status status="PASS" starttime="20201105 11:50:11.266" endtime="20201105 11:50:11.300"></status>
+<msg timestamp="20201105 13:54:17.039" level="INFO">Clicking element '//select[@id='toAccountId']/option[@value=21780]'.</msg>
+<status status="PASS" starttime="20201105 13:54:17.039" endtime="20201105 13:54:17.070"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${TRANSFER BUTTON}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:11.301" level="INFO">Clicking button '//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20201105 11:50:11.301" endtime="20201105 11:50:11.358"></status>
+<msg timestamp="20201105 13:54:17.071" level="INFO">Clicking button '//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20201105 13:54:17.071" endtime="20201105 13:54:17.124"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${FUNDS TRANSFERED TITLE}</arg>
 </arguments>
-<status status="PASS" starttime="20201105 11:50:11.358" endtime="20201105 11:50:11.826"></status>
+<status status="PASS" starttime="20201105 13:54:17.124" endtime="20201105 13:54:17.560"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:10.164" endtime="20201105 11:50:11.826"></status>
+<status status="PASS" starttime="20201105 13:54:16.024" endtime="20201105 13:54:17.560"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:06.257" endtime="20201105 11:50:11.829" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:54:12.942" endtime="20201105 13:54:17.561" critical="yes"></status>
 </test>
-<test id="s1-t9" name="Account Username &amp; Password:">
+<test id="s1-t10" name="Update account info">
+<kw name="Update Contact info" library="keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${UPDATE INFO LINK}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:17.564" level="INFO">Clicking link '//ul/li/a[text()='Update Contact Info']'.</msg>
+<status status="PASS" starttime="20201105 13:54:17.563" endtime="20201105 13:54:17.976"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${UPDATE PROFILE TITLE}</arg>
+</arguments>
+<status status="PASS" starttime="20201105 13:54:17.976" endtime="20201105 13:54:18.001"></status>
+</kw>
+<kw name="Generate Firstname" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE FIRSTNAME}</var>
+</assign>
+<msg timestamp="20201105 13:54:18.002" level="INFO">${GENERATE FIRSTNAME} = Leena</msg>
+<status status="PASS" starttime="20201105 13:54:18.001" endtime="20201105 13:54:18.002"></status>
+</kw>
+<kw name="Generate Lastname" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE LASTNAME}</var>
+</assign>
+<msg timestamp="20201105 13:54:18.002" level="INFO">${GENERATE LASTNAME} = Järvinen</msg>
+<status status="PASS" starttime="20201105 13:54:18.002" endtime="20201105 13:54:18.002"></status>
+</kw>
+<kw name="Generate Address" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE ADDRESS}</var>
+</assign>
+<msg timestamp="20201105 13:54:18.002" level="INFO">${GENERATE ADDRESS} = Ilmakuja 8 G</msg>
+<status status="PASS" starttime="20201105 13:54:18.002" endtime="20201105 13:54:18.002"></status>
+</kw>
+<kw name="Generate City" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE CITY}</var>
+</assign>
+<msg timestamp="20201105 13:54:18.003" level="INFO">${GENERATE CITY} = Turku</msg>
+<status status="PASS" starttime="20201105 13:54:18.003" endtime="20201105 13:54:18.003"></status>
+</kw>
+<kw name="Generate State" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE STATE}</var>
+</assign>
+<msg timestamp="20201105 13:54:18.004" level="INFO">${GENERATE STATE} = Etelä-Savo</msg>
+<status status="PASS" starttime="20201105 13:54:18.003" endtime="20201105 13:54:18.004"></status>
+</kw>
+<kw name="Generate Zipcode" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE ZIPCODE}</var>
+</assign>
+<msg timestamp="20201105 13:54:18.004" level="INFO">${GENERATE ZIPCODE} = 58394</msg>
+<status status="PASS" starttime="20201105 13:54:18.004" endtime="20201105 13:54:18.004"></status>
+</kw>
+<kw name="Generate Phonenumber" library="GenerateCustomerData">
+<assign>
+<var>${GENERATE PHONE}</var>
+</assign>
+<msg timestamp="20201105 13:54:18.004" level="INFO">${GENERATE PHONE} = 425-1651055</msg>
+<status status="PASS" starttime="20201105 13:54:18.004" endtime="20201105 13:54:18.004"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CUSTOMER FIRSTNAME}</arg>
+<arg>${GENERATE FIRSTNAME}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.005" level="INFO">Typing text 'Leena' into text field 'id=customer.firstName'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.004" endtime="20201105 13:54:18.098"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CUSTOMER LASTNAME}</arg>
+<arg>${GENERATE LASTNAME}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.099" level="INFO">Typing text 'Järvinen' into text field 'id=customer.lastName'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.099" endtime="20201105 13:54:18.180"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CUSTOMER ADDRESS}</arg>
+<arg>${GENERATE ADDRESS}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.181" level="INFO">Typing text 'Ilmakuja 8 G' into text field 'id=customer.address.street'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.180" endtime="20201105 13:54:18.263"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CUSTOMER CITY}</arg>
+<arg>${GENERATE CITY}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.264" level="INFO">Typing text 'Turku' into text field 'id=customer.address.city'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.263" endtime="20201105 13:54:18.335"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CUSTOMER STATE}</arg>
+<arg>${GENERATE STATE}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.336" level="INFO">Typing text 'Etelä-Savo' into text field 'id=customer.address.state'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.336" endtime="20201105 13:54:18.420"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CUSTOMER ZIPCODE}</arg>
+<arg>${GENERATE ZIPCODE}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.421" level="INFO">Typing text '58394' into text field 'id=customer.address.zipCode'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.421" endtime="20201105 13:54:18.499"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CUSTOMER PHONE}</arg>
+<arg>${GENERATE PHONE}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.499" level="INFO">Typing text '425-1651055' into text field 'id=customer.phoneNumber'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.499" endtime="20201105 13:54:18.583"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${UPDATE USER BUTTON}</arg>
+</arguments>
+<msg timestamp="20201105 13:54:18.584" level="INFO">Clicking button '//td/input[@value='Update Profile']'.</msg>
+<status status="PASS" starttime="20201105 13:54:18.583" endtime="20201105 13:54:18.638"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${USER UPDATED TITLE}</arg>
+</arguments>
+<status status="PASS" starttime="20201105 13:54:18.638" endtime="20201105 13:54:19.074"></status>
+</kw>
+<status status="PASS" starttime="20201105 13:54:17.563" endtime="20201105 13:54:19.075"></status>
+</kw>
+<status status="PASS" starttime="20201105 13:54:17.562" endtime="20201105 13:54:19.075" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Account Username &amp; Password:">
 <kw name="Username and Password" library="keywords">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${GENERATE USERNAME}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:11.832" level="INFO">Riitta</msg>
-<status status="PASS" starttime="20201105 11:50:11.832" endtime="20201105 11:50:11.833"></status>
+<msg timestamp="20201105 13:54:19.078" level="INFO">user 254</msg>
+<status status="PASS" starttime="20201105 13:54:19.078" endtime="20201105 13:54:19.078"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${GENERATE PASSWORD}</arg>
 </arguments>
-<msg timestamp="20201105 11:50:11.833" level="INFO">2616243838</msg>
-<status status="PASS" starttime="20201105 11:50:11.833" endtime="20201105 11:50:11.833"></status>
+<msg timestamp="20201105 13:54:19.079" level="INFO">2043123113</msg>
+<status status="PASS" starttime="20201105 13:54:19.079" endtime="20201105 13:54:19.079"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:11.832" endtime="20201105 11:50:11.833"></status>
+<status status="PASS" starttime="20201105 13:54:19.077" endtime="20201105 13:54:19.079"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:11.831" endtime="20201105 11:50:11.838" critical="yes"></status>
+<status status="PASS" starttime="20201105 13:54:19.077" endtime="20201105 13:54:19.080" critical="yes"></status>
 </test>
 <kw name="Close browser when done" library="keywords" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201105 11:50:11.841" endtime="20201105 11:50:14.112"></status>
+<status status="PASS" starttime="20201105 13:54:19.083" endtime="20201105 13:54:21.322"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:50:11.841" endtime="20201105 11:50:14.112"></status>
+<status status="PASS" starttime="20201105 13:54:19.082" endtime="20201105 13:54:21.322"></status>
 </kw>
-<status status="PASS" starttime="20201105 11:49:45.807" endtime="20201105 11:50:14.112"></status>
+<status status="PASS" starttime="20201105 13:53:52.423" endtime="20201105 13:54:21.322"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="9" fail="0">Critical Tests</stat>
-<stat pass="9" fail="0">All Tests</stat>
+<stat pass="11" fail="0">Critical Tests</stat>
+<stat pass="11" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="9" fail="0" id="s1" name="Test">Test</stat>
+<stat pass="11" fail="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>

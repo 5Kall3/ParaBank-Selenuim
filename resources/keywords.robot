@@ -121,6 +121,28 @@ Transfer too many funds
     Click Button    ${TRANSFER BUTTON}
     Wait Until Element Is Visible    ${FUNDS TRANSFERED TITLE}
 
+Pay bills
+    Click Link    ${BILL PAY LINK}
+    Wait Until Element Is Visible    ${BILL PAY TITLE}
+    ${GENERATE PAYEE NAME} =    generate firstname
+    ${GENERATE PAYEE ADDRESS} =    generate address
+    ${GENERATE PAYEE CITY} =    generate city
+    ${GENERATE PAYEE STATE} =    generate state
+    ${GENERATE PAYEE ZIPCODE} =    generate zipcode
+    ${GENERATE PAYEE PHONE} =    generate phonenumber
+    ${GENERATE PAYEE ACCOUNT} =    generate payee account
+    Input Text    ${PAYEE NAME}    ${GENERATE PAYEE NAME}
+    Input Text    ${PAYEE ADDRESS}    ${GENERATE PAYEE ADDRESS}
+    Input Text    ${PAYEE CITY}    ${GENERATE PAYEE CITY}
+    Input Text    ${PAYEE STATE}    ${GENERATE PAYEE STATE}
+    Input Text    ${PAYEE ZIPCODE}    ${GENERATE PAYEE ZIPCODE}
+    Input Text    ${PAYEE PHONE}    ${GENERATE PAYEE PHONE}
+    Input Text    ${PAYEE ACCOUNT}    ${GENERATE PAYEE ACCOUNT}
+    Input Text    ${CONFIRM ACCOUNT}    ${GENERATE PAYEE ACCOUNT}
+    Input Text    ${PAY AMOUNT}    25
+    Click Button    ${SEND PAYMENT BUTTON}
+    Wait Until Element Is Visible    ${PAYMENT SENT TITLE}
+
 Create a new banking customer
     Click Link    Register
     Wait Until Element Is Visible    ${SIGNING UP TITLE}
@@ -132,7 +154,7 @@ Create a new banking customer
     ${GENERATE ZIPCODE} =    generate zipcode
     ${GENERATE PHONE} =    generate phonenumber
     ${GENERATE SSN} =    generate ssn
-    ${GENERATE USERNAME} =    generate firstname
+    ${GENERATE USERNAME} =    generate username
     Set Global Variable    ${GENERATE USERNAME}
     ${GENERATE PASSWORD} =    generate password
     Set Global Variable    ${GENERATE PASSWORD}
@@ -150,6 +172,27 @@ Create a new banking customer
 
     Click Button    ${CREATE USER BUTTON}
     Wait Until Element Is Visible    ${USER CREATED TITLE}
+
+Update Contact info
+    Click Link    ${UPDATE INFO LINK}
+    Wait Until Element Is Visible    ${UPDATE PROFILE TITLE}
+    ${GENERATE FIRSTNAME} =    generate firstname
+    ${GENERATE LASTNAME} =    generate lastname
+    ${GENERATE ADDRESS} =    generate address
+    ${GENERATE CITY} =    generate city
+    ${GENERATE STATE} =    generate state
+    ${GENERATE ZIPCODE} =    generate zipcode
+    ${GENERATE PHONE} =    generate phonenumber
+    Input Text    ${CUSTOMER FIRSTNAME}    ${GENERATE FIRSTNAME}
+    Input Text    ${CUSTOMER LASTNAME}    ${GENERATE LASTNAME}
+    Input Text    ${CUSTOMER ADDRESS}    ${GENERATE ADDRESS}
+    Input Text    ${CUSTOMER CITY}    ${GENERATE CITY}
+    Input Text    ${CUSTOMER STATE}    ${GENERATE STATE}
+    Input Text    ${CUSTOMER ZIPCODE}    ${GENERATE ZIPCODE}
+    Input Text    ${CUSTOMER PHONE}    ${GENERATE PHONE}
+
+    Click Button    ${UPDATE USER BUTTON}
+    Wait Until Element Is Visible    ${USER UPDATED TITLE}
 
 Log out
     Click Link    ${LOG OUT LINK}

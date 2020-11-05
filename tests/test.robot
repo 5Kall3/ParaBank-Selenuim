@@ -26,6 +26,9 @@ Open new bank account
     Open new account
     Validate New Account
 
+Pay bills to different account
+    Pay bills
+
 Apply for a Loan
     Request loan succsessful
     Request loan fail
@@ -34,6 +37,9 @@ Transfer funds to different account
     Transfer funds
     Transfer negative funds
     Transfer too many funds
+
+Update account info
+    Update Contact info
 
 Account Username & Password:
     Username and Password

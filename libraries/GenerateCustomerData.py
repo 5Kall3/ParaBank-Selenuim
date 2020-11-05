@@ -67,6 +67,14 @@ class GenerateCustomerData:
         generate_snn_string = str(random.randint(100000, 999999)) + "+" + str(random.randint(100,999)) + str(letter)
         return generate_snn_string
 
+    def generate_username(self):
+        generate_username_string = "user " + str(random.randint(0, 999))
+        return generate_username_string
+
     def generate_password(self):
         generate_password_string = str(random.randint(0, 9999999999))
         return generate_password_string
+
+    def generate_payee_account(self):
+        generate_payee_account_string = str(random.randint(10000, 99999))
+        return generate_payee_account_string

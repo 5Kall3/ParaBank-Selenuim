@@ -44,7 +44,10 @@ TRANSFER_TO_SELECTOR = "//select[@id='toAccountId']"
 TRANSFER_BUTTON = "//input[@type='submit']"
 FUNDS_TRANSFERED_TITLE = "//h1[text()='Transfer Complete!']"
 
-# Create a new banking customer
+# Pay bills
+BILL_PAY_LINK = "//ul/li/a[text()='Bill Pay']"
+
+# Create a new banking customer / Update customer info
 SIGNING_UP_TITLE = "//h1[text()='Signing up is easy!']"
 CUSTOMER_FIRST_NAME = "id=customer.firstName"
 CUSTOMER_LAST_NAME = "id=customer.lastName"
@@ -59,6 +62,26 @@ CUSTOMER_PASSWORD = "id=customer.password"
 CUSTOMER_CONFIRM = "id=repeatedPassword"
 CREATE_USER_BUTTON = "//td/input[@value='Register']"
 USER_CREATED_TITLE = "//h1[text()]"
+
+UPDATE_INFO_LINK = "//ul/li/a[text()='Update Contact Info']"
+UPDATE_PROFILE_TITLE = "//h1[text()='Update Profile']"
+UPDATE_USER_BUTTON = "//td/input[@value='Update Profile']"
+USER_UPDATED_TITLE = "//h1[text()='Profile Updated']"
+
+# Bill payee data
+BILL_PAY_TITLE = "//h1[text()='Bill Payment Service']"
+PAYEE_NAME = "name=payee.name"
+PAYEE_ADDRESS = "name=payee.address.street"
+PAYEE_CITY = "name=payee.address.city"
+PAYEE_STATE = "name=payee.address.state"
+PAYEE_ZIPCODE = "name=payee.address.zipCode"
+PAYEE_PHONE = "name=payee.phoneNumber"
+PAYEE_ACCOUNT = "name=payee.accountNumber"
+CONFIRM_ACCOUNT = "name=verifyAccount"
+PAY_AMOUNT = "name=amount"
+
+SEND_PAYMENT_BUTTON = "//td/input[@value='Send Payment']"
+PAYMENT_SENT_TITLE = "//h1[text()]"
 
 # Log out
 LOG_OUT_LINK = "//ul/li/a[text()='Log Out']"
