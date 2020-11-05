@@ -34,3 +34,6 @@ Transfer funds to different account
     Transfer funds
     Transfer negative funds
     Transfer too many funds
+
+Account Username & Password:
+    Username and Password

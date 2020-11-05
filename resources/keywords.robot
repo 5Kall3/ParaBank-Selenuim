@@ -153,3 +153,7 @@ Create a new banking customer
 
 Log out
     Click Link    ${LOG OUT LINK}
+
+Username and Password
+    Log    ${GENERATE USERNAME}
+    Log    ${GENERATE PASSWORD}
