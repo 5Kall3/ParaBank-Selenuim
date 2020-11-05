@@ -1,9 +1,5 @@
 import random
 
-# TODO
-# Come up with a way of creating all of these
-# randomly. Be creative
-
 class GenerateCustomerData:
 
     def generate_firstname(self):

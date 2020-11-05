@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-# Parabank locators
+# ParaBank locators
 PARABANK_TITLE = "//img[@title='ParaBank']"
 USERNAME_INPUT = "name=username"
 PASSWORD_INPUT = "name=password"
