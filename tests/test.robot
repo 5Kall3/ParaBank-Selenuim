@@ -5,7 +5,7 @@ Suite Teardown    Close browser when done
 
 *** Test Cases ***
 Open ParaBank
-    Open browser to front page
+    Open ParaBank in browser
     Open index page
 
 Create a new banking account
@@ -35,7 +35,11 @@ Apply for a Loan
 
 Transfer funds to different account
     Transfer funds
+
+Transfer negative funds to a different account
     Transfer negative funds
+
+Transfer too many funds to a different account
     Transfer too many funds
 
 Update account info

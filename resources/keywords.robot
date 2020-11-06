@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    ../libraries/GenerateCustomerData.py
+Library    ../libraries/SeleniumExample.py
 Variables    ../locators/locators.py
 
 *** Variables ***
@@ -9,7 +10,7 @@ ${URL_FOR_BROWSER}    https://parabank.parasoft.com/parabank/index.htm
 ${BROWSER_NAME}    chrome
 
 *** Keywords ***
-Open browser to front page
+Open ParaBank in browser
     Set Selenium Timeout    ${SELENIUM TIMEOUT TIME}
     Open browser    ${URL FOR BROWSER}    ${BROWSER NAME}
 
@@ -88,7 +89,7 @@ Request loan fail
 
 Transfer funds
     Click Link    ${TRANSFER FUNDS LINK}
-    Sleep    0.5s
+    Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    50
     Click Element    ${TRANSFER TO SELECTOR}
@@ -99,25 +100,27 @@ Transfer funds
 
 Transfer negative funds
     Click Link    ${TRANSFER FUNDS LINK}
-    Sleep    0.5s
+    Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    -100
     Click Element    ${TRANSFER TO SELECTOR}
     Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Element    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Button    ${TRANSFER BUTTON}
-    Wait Until Element Is Visible    ${FUNDS TRANSFERED TITLE}
+    Wait Until Element Is Visible    ${ERROR_MESSAGE_TEXT}
+    Element Text Should Be    ${ERROR MESSAGE TEXT}    ${ERROR MESSAGE 2}
 
 Transfer too many funds
     Click Link    ${TRANSFER FUNDS LINK}
-    Sleep    0.5s
+    Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    100000
     Click Element    ${TRANSFER TO SELECTOR}
     Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Element    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Button    ${TRANSFER BUTTON}
-    Wait Until Element Is Visible    ${FUNDS TRANSFERED TITLE}
+    Wait Until Element Is Visible    ${ERROR_MESSAGE_TEXT}
+    Element Text Should Be    ${ERROR MESSAGE TEXT}    ${ERROR MESSAGE 3}
 
 Pay bills
     Click Link    ${BILL PAY LINK}
@@ -173,6 +176,7 @@ Create a new banking customer
 
 Update Contact info
     Click Link    ${UPDATE INFO LINK}
+    #example click    ${UPDATE INFO LINK}
     Wait Until Element Is Visible    ${UPDATE PROFILE TITLE}
     ${GENERATE FIRSTNAME} =    generate firstname
     ${GENERATE LASTNAME} =    generate lastname

@@ -90,3 +90,5 @@ ERROR_MESSAGE_TEXT = "class=error"
 
 # ParaBank error messages
 ERROR_MESSAGE_1 = "The username and password could not be verified."
+ERROR_MESSAGE_2 = "You cannot transfer negative funds!"
+ERROR_MESSAGE_3 = "You do not have enough money!"

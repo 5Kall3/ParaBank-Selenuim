@@ -1,13 +1,13 @@
 *** Settings ***
-Documentation    Suite description
+Resource    ../resources/keywords.robot
+Library    ../libraries/GenerateCustomerData.py
+Library    ../libraries/SeleniumExample.py
+Suite Teardown    Close browser when done
 
 *** Test Cases ***
-Test title
-    [Tags]    DEBUG
-    Provided precondition
-    When action
-    Then check expectations
+Open ParaBank
+    Open ParaBank in browser
+    Open index page
 
-*** Keywords ***
-Provided precondition
-    Setup system under test
+Create a new banking account
+    Create a new banking customer
