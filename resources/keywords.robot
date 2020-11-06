@@ -5,7 +5,7 @@ Library    ../libraries/SeleniumExample.py
 Variables    ../locators/locators.py
 
 *** Variables ***
-${SELENIUM_TIMEOUT_TIME}    30 seconds
+${SELENIUM_TIMEOUT_TIME}    10 seconds
 ${URL_FOR_BROWSER}    https://parabank.parasoft.com/parabank/index.htm
 ${BROWSER_NAME}    chrome
 
@@ -175,8 +175,8 @@ Create a new banking customer
     Wait Until Element Is Visible    ${USER CREATED TITLE}
 
 Update Contact info
-    Click Link    ${UPDATE INFO LINK}
-    #example click    ${UPDATE INFO LINK}
+    #Click Link    ${UPDATE INFO LINK}
+    example click    ${UPDATE INFO LINK}
     Wait Until Element Is Visible    ${UPDATE PROFILE TITLE}
     ${GENERATE FIRSTNAME} =    generate firstname
     ${GENERATE LASTNAME} =    generate lastname
