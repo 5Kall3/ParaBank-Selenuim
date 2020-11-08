@@ -48,6 +48,7 @@ FUNDS_TRANSFERED_TITLE = "//h1[text()='Transfer Complete!']"
 BILL_PAY_LINK = "//ul/li/a[text()='Bill Pay']"
 
 # Create a new banking customer / Update customer info
+REGISTER_LINK = "//p/a[text()='Register']"
 SIGNING_UP_TITLE = "//h1[text()='Signing up is easy!']"
 CUSTOMER_FIRST_NAME = "id=customer.firstName"
 CUSTOMER_LAST_NAME = "id=customer.lastName"
@@ -83,6 +84,15 @@ PAY_AMOUNT = "name=amount"
 SEND_PAYMENT_BUTTON = "//td/input[@value='Send Payment']"
 PAYMENT_SENT_TITLE = "//h1[text()]"
 
+# Find transactions
+FIND_TRANSACTIONS_LINK = "//ul/li/a[text()='Find Transactions']"
+FIND_TRANSACTION_TITLE = "//h1[text()='Find Transactions']"
+FIND_ACCOUNT_SELECTOR = "//div/select"
+
+AMOUNT_CRITERIA_INPUT = "//input[@id='criteria.amount']"
+FIND_BY_AMOUNT_BUTTON = "//form/div[9]/button"
+TRANSACTION_TO_FIND_BY_AMOUNT = "//td/span[text()='$50.00']"
+
 # Log out
 LOG_OUT_LINK = "//ul/li/a[text()='Log Out']"
 
@@ -90,5 +100,3 @@ ERROR_MESSAGE_TEXT = "class=error"
 
 # ParaBank error messages
 ERROR_MESSAGE_1 = "The username and password could not be verified."
-ERROR_MESSAGE_2 = "You cannot transfer negative funds!"
-ERROR_MESSAGE_3 = "You do not have enough money!"

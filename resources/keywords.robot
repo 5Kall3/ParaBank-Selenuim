@@ -89,7 +89,8 @@ Request loan fail
 
 Transfer funds
     Click Link    ${TRANSFER FUNDS LINK}
-    Sleep    0.6s
+    Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
+    #Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    50
     Click Element    ${TRANSFER TO SELECTOR}
@@ -100,27 +101,28 @@ Transfer funds
 
 Transfer negative funds
     Click Link    ${TRANSFER FUNDS LINK}
-    Sleep    0.6s
+    Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
+    #Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    -100
     Click Element    ${TRANSFER TO SELECTOR}
     Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Element    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Button    ${TRANSFER BUTTON}
-    Wait Until Element Is Visible    ${ERROR_MESSAGE_TEXT}
-    Element Text Should Be    ${ERROR MESSAGE TEXT}    ${ERROR MESSAGE 2}
+    Wait Until Element Is Not Visible    ${ERROR_MESSAGE_TEXT}
+
 
 Transfer too many funds
     Click Link    ${TRANSFER FUNDS LINK}
-    Sleep    0.6s
+    Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
+    #Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    100000
     Click Element    ${TRANSFER TO SELECTOR}
     Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Element    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
     Click Button    ${TRANSFER BUTTON}
-    Wait Until Element Is Visible    ${ERROR_MESSAGE_TEXT}
-    Element Text Should Be    ${ERROR MESSAGE TEXT}    ${ERROR MESSAGE 3}
+    Wait Until Element Is Not Visible    ${ERROR_MESSAGE_TEXT}
 
 Pay bills
     Click Link    ${BILL PAY LINK}
@@ -145,8 +147,8 @@ Pay bills
     Wait Until Element Is Visible    ${PAYMENT SENT TITLE}
 
 Create a new banking customer
-    Click Link    Register
-    Wait Until Element Is Visible    ${SIGNING UP TITLE}
+    python click    ${REGISTER LINK}
+    python is displayed    ${SIGNING UP TITLE}
     ${GENERATE FIRSTNAME} =    generate firstname
     ${GENERATE LASTNAME} =    generate lastname
     ${GENERATE ADDRESS} =    generate address
@@ -174,9 +176,18 @@ Create a new banking customer
     Click Button    ${CREATE USER BUTTON}
     Wait Until Element Is Visible    ${USER CREATED TITLE}
 
+Find transactions by amount
+    python click    ${FIND TRANSACTIONS LINK}
+    Wait Until Element Is Visible    ${FIND TRANSACTION TITLE}
+    python click    ${FIND_ACCOUNT SELECTOR}
+    Wait Until Element Is Visible    //select/option[@value=${ACCOUNT NUMBER}]
+    python click    //select/option[@value=${ACCOUNT NUMBER}]
+    python input text    ${AMOUNT CRITERIA INPUT}    50
+    python click    ${FIND BY AMOUNT BUTTON}
+    Wait Until Element Is Visible    ${TRANSACTION_TO_FIND_BY_AMOUNT}
+
 Update Contact info
-    #Click Link    ${UPDATE INFO LINK}
-    example click    ${UPDATE INFO LINK}
+    Click Link    ${UPDATE INFO LINK}
     Wait Until Element Is Visible    ${UPDATE PROFILE TITLE}
     ${GENERATE FIRSTNAME} =    generate firstname
     ${GENERATE LASTNAME} =    generate lastname

@@ -42,6 +42,9 @@ Transfer negative funds to a different account
 Transfer too many funds to a different account
     Transfer too many funds
 
+Find transactions by amount with Python
+    Find transactions by amount
+
 Update account info
     Update Contact info
 

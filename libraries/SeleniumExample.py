@@ -21,12 +21,17 @@ class SeleniumExample:
         """
         return BuiltIn().get_library_instance(lib)
 
-    def example_is_displayed(self, locator):
+    def python_is_displayed(self, locator):
         driver = self.__get_library(self.library).driver
-        WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located(
-            By.XPATH(locator))).is_displayed()
+        WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((
+            By.XPATH, locator))).is_displayed()
 
-    def example_click(self, locator):
+    def python_click(self, locator):
         driver = self.__get_library(self.library).driver
-        WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located(
-            By.XPATH(locator))).click()
+        WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((
+            By.XPATH, locator))).click()
+
+    def python_input_text(self, locator, text):
+        driver = self.__get_library(self.library).driver
+        WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((
+            By.XPATH, locator))).send_keys(text)
