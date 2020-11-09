@@ -90,7 +90,6 @@ Request loan fail
 Transfer funds
     Click Link    ${TRANSFER FUNDS LINK}
     Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
-    #Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    50
     Click Element    ${TRANSFER TO SELECTOR}
@@ -102,7 +101,6 @@ Transfer funds
 Transfer negative funds
     Click Link    ${TRANSFER FUNDS LINK}
     Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
-    #Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    -100
     Click Element    ${TRANSFER TO SELECTOR}
@@ -115,7 +113,6 @@ Transfer negative funds
 Transfer too many funds
     Click Link    ${TRANSFER FUNDS LINK}
     Wait Until Element Is Visible    //select[@id='toAccountId']/option[@value=${ACCOUNT NUMBER}]
-    #Sleep    0.6s
     Wait Until Element Is Visible    ${TRANSFER FUNDS TITLE}
     Input Text    ${TRANSFER AMOUNT}    100000
     Click Element    ${TRANSFER TO SELECTOR}
@@ -185,6 +182,30 @@ Find transactions by amount
     python input text    ${AMOUNT CRITERIA INPUT}    50
     python click    ${FIND BY AMOUNT BUTTON}
     Wait Until Element Is Visible    ${TRANSACTION_TO_FIND_BY_AMOUNT}
+
+Find transactions by date
+    python click    ${FIND TRANSACTIONS LINK}
+    Wait Until Element Is Visible    ${FIND TRANSACTION TITLE}
+    python click    ${FIND_ACCOUNT SELECTOR}
+    Wait Until Element Is Visible    //select/option[@value=${ACCOUNT NUMBER}]
+    python click    //select/option[@value=${ACCOUNT NUMBER}]
+    ${GENERATE CURRENT DATE} =    generate current date
+    python input text    ${DATE CRITERIA INPUT}    ${GENERATE CURRENT DATE}
+    python click    ${FIND BY DATE BUTTON}
+    Wait Until Element Is Visible    //td[text()="${GENERATE CURRENT DATE}"]
+
+Find transactions by date range
+    python click    ${FIND TRANSACTIONS LINK}
+    Wait Until Element Is Visible    ${FIND TRANSACTION TITLE}
+    python click    ${FIND_ACCOUNT SELECTOR}
+    Wait Until Element Is Visible    //select/option[@value="${ACCOUNT NUMBER}"]
+    python click    //select/option[@value="${ACCOUNT NUMBER}"]
+    ${GENERATE CURRENT DATE} =    generate current date
+    ${GENERATE PAST DATE} =    generate past date
+    python input text    ${DATE TO RANGE CRITERIA INPUT}    ${GENERATE CURRENT DATE}
+    python input text    ${DATE FROM RANGE CRITERIA INPUT}    ${GENERATE PAST DATE}
+    python click    ${FIND BY DATE RANGE BUTTON}
+    Wait Until Element Is Visible    //td[text()="${GENERATE CURRENT DATE}"]
 
 Update Contact info
     Click Link    ${UPDATE INFO LINK}

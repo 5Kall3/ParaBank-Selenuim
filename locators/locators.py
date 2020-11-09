@@ -93,6 +93,13 @@ AMOUNT_CRITERIA_INPUT = "//input[@id='criteria.amount']"
 FIND_BY_AMOUNT_BUTTON = "//form/div[9]/button"
 TRANSACTION_TO_FIND_BY_AMOUNT = "//td/span[text()='$50.00']"
 
+DATE_CRITERIA_INPUT = "//input[@id='criteria.onDate']"
+FIND_BY_DATE_BUTTON = "//form/div[5]/button"
+
+DATE_FROM_RANGE_CRITERIA_INPUT = "//input[@id='criteria.fromDate']"
+DATE_TO_RANGE_CRITERIA_INPUT = "//input[@id='criteria.toDate']"
+FIND_BY_DATE_RANGE_BUTTON = "//form/div[7]/button"
+
 # Log out
 LOG_OUT_LINK = "//ul/li/a[text()='Log Out']"
 

@@ -1,4 +1,5 @@
 import random
+import datetime
 
 class GenerateCustomerData:
 
@@ -64,7 +65,7 @@ class GenerateCustomerData:
         return generate_snn_string
 
     def generate_username(self):
-        generate_username_string = "user " + str(random.randint(0, 999))
+        generate_username_string = "user " + str(random.randint(0, 9999))
         return generate_username_string
 
     def generate_password(self):
@@ -74,3 +75,13 @@ class GenerateCustomerData:
     def generate_payee_account(self):
         generate_payee_account_string = str(random.randint(10000, 99999))
         return generate_payee_account_string
+
+    def generate_current_date(self):
+        dt = datetime.datetime.today()
+        current_date_string = str(dt.month) + "-" + str(dt.day) + "-" + str(dt.year)
+        return current_date_string
+
+    def generate_past_date(self):
+        dt = datetime.datetime.today()
+        past_date_string = str(dt.month - 1) + "-" + str(dt.day) + "-" + str(dt.year)
+        return past_date_string
