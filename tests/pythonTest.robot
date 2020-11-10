@@ -2,7 +2,7 @@
 Resource    ../resources/keywords.robot
 Library    ../libraries/GenerateCustomerData.py
 Library    ../libraries/SeleniumExample.py
-#Suite Teardown    Close browser when done
+Suite Teardown    Close browser when done
 
 *** Test Cases ***
 Open ParaBank
