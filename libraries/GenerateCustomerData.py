@@ -12,7 +12,6 @@ class GenerateCustomerData:
                           "Tarja", "Pirkko", "Laura", "Seija", "Aino", "Liisa", "Eeva", "Raija"]
         firstname = random.choice(firstname_list)
         generate_firstname_string = str(firstname)
-
         return generate_firstname_string
 
     def generate_lastname(self):
@@ -51,7 +50,8 @@ class GenerateCustomerData:
         return generate_state_string
 
     def generate_zipcode(self):
-        generate_zipcode_string = str(random.randint(10000, 99999))
+        zipcode = str(random.randint(10000, 99999))
+        generate_zipcode_string = zipcode
         return generate_zipcode_string
 
     def generate_phonenumber(self):
@@ -85,3 +85,4 @@ class GenerateCustomerData:
         dt = datetime.datetime.today()
         past_date_string = str(dt.month - 1) + "-" + str(dt.day) + "-" + str(dt.year)
         return past_date_string
+

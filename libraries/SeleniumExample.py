@@ -35,3 +35,9 @@ class SeleniumExample:
         driver = self.__get_library(self.library).driver
         WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((
             By.XPATH, locator))).send_keys(text)
+
+    def python_get_text(self, locator):
+        driver = self.__get_library(self.library).driver
+        WebDriverWait(driver, 60).until(expected_conditions.presence_of_element_located((
+            By.XPATH, locator))).text()
+

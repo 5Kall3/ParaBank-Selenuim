@@ -12,5 +12,8 @@ Open ParaBank
 Create a new banking account
     Create a new banking customer
 
-Find transactions by amount with Python
-    Find transactions by amount
+Pay bills to different account
+    Pay bills
+
+Update account info
+    Update Contact info

@@ -143,6 +143,16 @@ Pay bills
     Click Button    ${SEND PAYMENT BUTTON}
     Wait Until Element Is Visible    ${PAYMENT SENT TITLE}
 
+    # Get the trasnaction ID
+    python click    ${ACCOUNTS OVERVIEW LINK}
+    python is displayed    //td/a[text()="${ACCOUNT NUMBER}"]
+    python click    //td/a[text()="${ACCOUNT NUMBER}"]
+    python is displayed    ${ACCOUNT DETAILS TITLE}
+    python click    //td/a[text()='Funds Transfer Received']
+    python is displayed    //h1[text()='Transaction Details']
+    ${TRANSACTION ID} =    Get Text    //tbody/tr[1]/td[2]
+    Set Global Variable    ${TRANSACTION ID}
+
 Create a new banking customer
     python click    ${REGISTER LINK}
     python is displayed    ${SIGNING UP TITLE}
@@ -175,55 +185,65 @@ Create a new banking customer
 
 Find transactions by amount
     python click    ${FIND TRANSACTIONS LINK}
-    Wait Until Element Is Visible    ${FIND TRANSACTION TITLE}
+    python is displayed    ${FIND TRANSACTION TITLE}
     python click    ${FIND_ACCOUNT SELECTOR}
-    Wait Until Element Is Visible    //select/option[@value=${ACCOUNT NUMBER}]
+    python is displayed    //select/option[@value=${ACCOUNT NUMBER}]
     python click    //select/option[@value=${ACCOUNT NUMBER}]
     python input text    ${AMOUNT CRITERIA INPUT}    50
     python click    ${FIND BY AMOUNT BUTTON}
-    Wait Until Element Is Visible    ${TRANSACTION_TO_FIND_BY_AMOUNT}
+    python is displayed   ${TRANSACTION_TO_FIND_BY_AMOUNT}
 
 Find transactions by date
     python click    ${FIND TRANSACTIONS LINK}
-    Wait Until Element Is Visible    ${FIND TRANSACTION TITLE}
+    python is displayed    ${FIND TRANSACTION TITLE}
     python click    ${FIND_ACCOUNT SELECTOR}
-    Wait Until Element Is Visible    //select/option[@value=${ACCOUNT NUMBER}]
+    python is displayed    //select/option[@value=${ACCOUNT NUMBER}]
     python click    //select/option[@value=${ACCOUNT NUMBER}]
     ${GENERATE CURRENT DATE} =    generate current date
     python input text    ${DATE CRITERIA INPUT}    ${GENERATE CURRENT DATE}
     python click    ${FIND BY DATE BUTTON}
-    Wait Until Element Is Visible    //td[text()="${GENERATE CURRENT DATE}"]
+    python is displayed    //td[text()="${GENERATE CURRENT DATE}"]
 
 Find transactions by date range
     python click    ${FIND TRANSACTIONS LINK}
-    Wait Until Element Is Visible    ${FIND TRANSACTION TITLE}
+    python is displayed    ${FIND TRANSACTION TITLE}
     python click    ${FIND_ACCOUNT SELECTOR}
-    Wait Until Element Is Visible    //select/option[@value="${ACCOUNT NUMBER}"]
+    python is displayed    //select/option[@value="${ACCOUNT NUMBER}"]
     python click    //select/option[@value="${ACCOUNT NUMBER}"]
     ${GENERATE CURRENT DATE} =    generate current date
     ${GENERATE PAST DATE} =    generate past date
     python input text    ${DATE TO RANGE CRITERIA INPUT}    ${GENERATE CURRENT DATE}
     python input text    ${DATE FROM RANGE CRITERIA INPUT}    ${GENERATE PAST DATE}
     python click    ${FIND BY DATE RANGE BUTTON}
-    Wait Until Element Is Visible    //td[text()="${GENERATE CURRENT DATE}"]
+    python is displayed    //td[text()="${GENERATE CURRENT DATE}"]
+
+Find transactions by id
+    python click    ${FIND TRANSACTIONS LINK}
+    python is displayed    ${FIND TRANSACTION TITLE}
+    python click    ${FIND_ACCOUNT SELECTOR}
+    python is displayed    //select/option[@value=${ACCOUNT NUMBER}]
+    python click    //select/option[@value=${ACCOUNT NUMBER}]
+    python input text    ${ID CRITERIA INPUT}    ${TRANSACTION ID}
+    python click    ${FIND BY ID BUTTON}
+    python is displayed    ${TRANSACTION_TO_FIND_BY_ID}
 
 Update Contact info
     Click Link    ${UPDATE INFO LINK}
     Wait Until Element Is Visible    ${UPDATE PROFILE TITLE}
-    ${GENERATE FIRSTNAME} =    generate firstname
-    ${GENERATE LASTNAME} =    generate lastname
-    ${GENERATE ADDRESS} =    generate address
-    ${GENERATE CITY} =    generate city
-    ${GENERATE STATE} =    generate state
-    ${GENERATE ZIPCODE} =    generate zipcode
-    ${GENERATE PHONE} =    generate phonenumber
-    Input Text    ${CUSTOMER FIRSTNAME}    ${GENERATE FIRSTNAME}
-    Input Text    ${CUSTOMER LASTNAME}    ${GENERATE LASTNAME}
-    Input Text    ${CUSTOMER ADDRESS}    ${GENERATE ADDRESS}
-    Input Text    ${CUSTOMER CITY}    ${GENERATE CITY}
-    Input Text    ${CUSTOMER STATE}    ${GENERATE STATE}
-    Input Text    ${CUSTOMER ZIPCODE}    ${GENERATE ZIPCODE}
-    Input Text    ${CUSTOMER PHONE}    ${GENERATE PHONE}
+    ${GENERATE NEW FIRSTNAME} =    generate firstname
+    ${GENERATE NEW LASTNAME} =    generate lastname
+    ${GENERATE NEW ADDRESS} =    generate address
+    ${GENERATE NEW CITY} =    generate city
+    ${GENERATE NEW STATE} =    generate state
+    ${GENERATE NEW ZIPCODE} =    generate zipcode
+    ${GENERATE NEW PHONE} =    generate phonenumber
+    Input Text    ${CUSTOMER FIRSTNAME}    ${GENERATE NEW FIRSTNAME}    clear=True
+    Input Text    ${CUSTOMER LASTNAME}    ${GENERATE NEW LASTNAME}
+    Input Text    ${CUSTOMER ADDRESS}    ${GENERATE NEW ADDRESS}
+    Input Text    ${CUSTOMER CITY}    ${GENERATE NEW CITY}
+    Input Text    ${CUSTOMER STATE}    ${GENERATE NEW STATE}
+    Input Text    ${CUSTOMER ZIPCODE}    ${GENERATE NEW ZIPCODE}
+    Input Text    ${CUSTOMER PHONE}    ${GENERATE NEW PHONE}
 
     Click Button    ${UPDATE USER BUTTON}
     Wait Until Element Is Visible    ${USER UPDATED TITLE}

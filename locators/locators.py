@@ -100,6 +100,10 @@ DATE_FROM_RANGE_CRITERIA_INPUT = "//input[@id='criteria.fromDate']"
 DATE_TO_RANGE_CRITERIA_INPUT = "//input[@id='criteria.toDate']"
 FIND_BY_DATE_RANGE_BUTTON = "//form/div[7]/button"
 
+ID_CRITERIA_INPUT = "//input[@id='criteria.transactionId']"
+FIND_BY_ID_BUTTON = "//form/div[3]/button"
+TRANSACTION_TO_FIND_BY_ID = "//td/span[text()='$100.00']"
+
 # Log out
 LOG_OUT_LINK = "//ul/li/a[text()='Log Out']"
 
