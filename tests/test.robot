@@ -45,9 +45,9 @@ Transfer too many funds to a different account
 Find transactions by amount with Python
     Find transactions by amount
 
-#Find transactions by date with Python
-    #Find transactions by date
-    #Find transactions by date range
+Find transactions by date with Python
+    Find transactions by date
+    Find transactions by date range
 
 Find transactions by id with Python
     Find transactions by id
